@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Affogato-Black';
+    src: url('Affogato-Black.eot');
+    src: url('Affogato-Black.eot?#iefix') format('embedded-opentype'),
+    	 url('Affogato-Black.woff') format('woff'),
+         url('Affogato-Black.woff2') format('woff2'),
+         url('Affogato-Black.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Affogato-Bold';
+    src: url('Affogato-Bold.eot');
+    src: url('Affogato-Bold.eot?#iefix') format('embedded-opentype'),
+    	 url('Affogato-Bold.woff') format('woff'),
+         url('Affogato-Bold.woff2') format('woff2'),
+         url('Affogato-Bold.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Affogato-Medium';
+    src: url('Affogato-Medium.eot');
+    src: url('Affogato-Medium.eot?#iefix') format('embedded-opentype'),
+    	 url('Affogato-Medium.woff') format('woff'),
+         url('Affogato-Medium.woff2') format('woff2'),
+         url('Affogato-Medium.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Affogato-Regular';
+    src: url('Affogato-Regular.eot');
+    src: url('Affogato-Regular.eot?#iefix') format('embedded-opentype'),
+    	 url('Affogato-Regular.woff') format('woff'),
+         url('Affogato-Regular.woff2') format('woff2'),
+         url('Affogato-Regular.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Affogato-Light';
+    src: url('Affogato-Light.eot');
+    src: url('Affogato-Light.eot?#iefix') format('embedded-opentype'),
+    	 url('Affogato-Light.woff') format('woff'),
+         url('Affogato-Light.woff2') format('woff2'),
+         url('Affogato-Light.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.black {
+	font-family: 'Affogato-Black';
+}
+.bold {
+	font-family: 'Affogato-Bold';
+}
+.medium {
+	font-family: 'Affogato-Medium';
+}
+.regular {
+	font-family: 'Affogato-Regular';
+}
+.light {
+	font-family: 'Affogato-Light';
+}
