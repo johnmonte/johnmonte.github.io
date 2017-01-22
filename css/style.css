@@ -68,7 +68,15 @@ p {
 
 .ellipsis {
 	font-size: 36px;
-	line-height: 45px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	o-transform-origin: center;
+	float: left;
 }
 
 .topnav ul {
@@ -171,6 +179,8 @@ section {
     text-align: center;
     font-size: 18px;
     color: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .btn {
