@@ -6,6 +6,8 @@ body {
 	padding: 30px;
 	background-color: #231f20;
 	transition: background-color .5s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body.light {
@@ -106,15 +108,6 @@ p {
 	float: left;
 }
 
-.topnav {
-	float: right;
-	margin: 0;
-	line-height: 70px;
-	padding-left: 15px;
-	/*text-transform: uppercase;*/
-	height: 70px;
-}
-
 .ellipsis {
 	font-size: 36px;
 	transform: rotate(270deg);
@@ -129,8 +122,16 @@ p {
 	line-height: 24px;
 }
 
+.topnav {
+	float: right;
+	margin: 0;
+	line-height: 70px;
+	height: 70px;
+}
+
 .topnav ul {
 	margin: 0;
+	padding: 0;
 }
 
 .topnav li {
@@ -157,7 +158,8 @@ h1.large {
 }
 
 .bottom {
-	padding-bottom: 105px;
+	/*padding-bottom: 105px;*/
+	padding-bottom: 30px;
 }
 
 section {
@@ -231,6 +233,14 @@ section {
     color: #fff;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.email a {
+	color: #231f20;
+}
+
+.email a:hover, .email a:focus {
+	color: #ad9571;
 }
 
 .btn {
