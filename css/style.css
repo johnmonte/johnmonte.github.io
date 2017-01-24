@@ -162,6 +162,10 @@ h1.large {
 	padding-bottom: 30px;
 }
 
+.contact {
+	padding-bottom: 200px;
+}
+
 section {
 	padding: 70px 0 105px 0;
 }
@@ -237,6 +241,10 @@ section {
 
 .email a {
 	color: #231f20;
+}
+
+.email i {
+	margin-right: 5px;
 }
 
 .email a:hover, .email a:focus {
