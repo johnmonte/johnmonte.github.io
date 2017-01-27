@@ -30,3 +30,9 @@ $window.scroll(function() {
         $body.removeClass("light");
     }
 });
+
+$('#lnkMail').hover(function(){
+	// here you can use whatever replace you want
+	var newHref = $(this).attr('href').replace('spam', 'com');
+	$(this).attr('href', newHref);
+});

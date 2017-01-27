@@ -5,7 +5,7 @@ body {
 	color: #fff;
 	padding: 30px;
 	background-color: #231f20;
-	transition: background-color .8s;
+	transition: background-color .5s;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -20,7 +20,7 @@ body.light {
 	position: fixed;
 	background-color: #1f1c1d;
 	z-index: 999999;
-	transition: background-color .8s;
+	transition: background-color .5s;
 }
 
 .border.light {
@@ -158,13 +158,13 @@ h1.large {
 }
 
 .bottom {
-	/*padding-bottom: 105px;*/
-	padding-bottom: 30px;
+	padding-bottom: 105px;
+	/*padding-bottom: 30px;*/
 }
 
-.contact {
+/*.contact {
 	padding-bottom: 200px;
-}
+}*/
 
 section {
 	padding: 70px 0 105px 0;
