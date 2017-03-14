@@ -1,10 +1,11 @@
 new WOW().init();
 
-$('#type').typeIt({
-     speed: 50,
-     autoStart: false
+document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.typed', {
+        strings: ["John Monte is a self-taught designer with over a decade of experience, solving problems through curiosity and good design."],
+        typeSpeed: 0,
+      });
 });
-
 var $corner = $(".border"),
     $window = $(window);
 
