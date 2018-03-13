@@ -82,7 +82,7 @@ h1 {
 
 h2 {
 	font-size: 36px;
-	line-height: 48px;
+	line-height: 43px;
 	margin-top: 0;
 }
 
@@ -104,7 +104,7 @@ p {
 	font-size: 36px;
 	line-height: 62px;
 	color: #231f20;
-	max-width: 70px;
+	max-width: 60px;
 	float: left;
 }
 
@@ -149,7 +149,7 @@ p {
 }
 
 h1.large {
-	line-height: 60px;
+	line-height: 55px;
 }
 
 .top {
