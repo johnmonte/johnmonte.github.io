@@ -150,14 +150,16 @@ p {
 	color: #ad9571;
 }
 
-h1.large {
+.large {
 	line-height: 68px;
 	letter-spacing: -1px;
 	font-family: 'geomanistmedium';
 	font-size: 60px;
+	margin: .67em 0;
+	display: block;
 }
 
-body.light h1.large,
+body.light .large,
 body.light h2 {
 	font-family: 'geomanistbold';
 }
@@ -171,6 +173,10 @@ body.light h2 {
 	margin-top: 10px;
 }
 
+.last {
+	padding-bottom: 90px;
+}
+
 section {
 	padding: 30px 0 60px 0;
 }
@@ -181,7 +187,6 @@ section {
 	font-family: 'geomanistregular';
 	letter-spacing: 0;
 	display: block;
-	margin-top: 60px;
 }
 
 .email a {
@@ -230,7 +235,7 @@ section {
 	.about p {
 		margin-bottom: 30px;
 	}
-	h1.large,
+	.large,
 	h2.large, h2 {
 		line-height: 48px;
 		word-wrap: break-word;
