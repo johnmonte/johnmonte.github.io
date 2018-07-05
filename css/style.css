@@ -232,7 +232,7 @@ section {
 	.logo {
 		max-width: 150px;
 	}
-	h1, h1.large {
+	h1, .large {
 		font-size: 40px;
 	}
 	.about h2,
