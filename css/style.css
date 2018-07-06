@@ -11,7 +11,6 @@ body {
 }
 
 body.light {
-	font-family: 'geomanistregular';
 	background-color: #fff;
 	color: #231f20;
 }
@@ -75,7 +74,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: #231f20;
+	color: #111;
 	text-decoration: none;
 	outline: 0;
 }
@@ -100,6 +99,25 @@ h2 {
 
 p {
 	margin-top: 5px;
+}
+
+blockquote {
+	padding: 0 0 0 15px;
+	margin: 0;
+	border: 0;
+}
+
+blockquote:before {
+	position: absolute;
+	top: 4px;
+	left: 15px;
+	content: "“";
+	font-size: 30px;
+	opacity: 0.4;
+}
+
+.author {
+	padding: 15px 0 30px 15px;
 }
 
 .header {
@@ -188,22 +206,13 @@ section {
 .email {
 	font-size: 18px;
 	line-height: 26px;
-	font-family: 'geomanistregular';
 	letter-spacing: 0;
 	display: block;
-}
-
-.email a {
-	color: #231f20;
 }
 
 .email i {
 	margin-right: 5px;
 	margin-bottom: 5px;
-}
-
-.email a:hover, .email a:focus {
-	color: #ad9571;
 }
 
 @media only screen and (max-width: 1025px) {
