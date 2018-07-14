@@ -1,5 +1,5 @@
 body {
-	font-family: 'geomanistregular';
+	font-family: 'geomanistregular', sans-serif;
 	font-size: 18px;
 	line-height: 26px;
 	color: #fff;
@@ -93,7 +93,7 @@ h2 {
 	font-size: 40px;
 	line-height: 48px;
 	margin-top: 0;
-	font-family: 'geomanistmedium';
+	font-family: 'geomanistmedium', sans-serif;
 	letter-spacing: -0.5px;
 }
 
@@ -171,7 +171,7 @@ blockquote:before {
 .large {
 	line-height: 68px;
 	letter-spacing: -1px;
-	font-family: 'geomanistmedium';
+	font-family: 'geomanistmedium', sans-serif;
 	font-size: 60px;
 	margin: .67em 0;
 	display: block;
@@ -179,7 +179,7 @@ blockquote:before {
 
 body.light .large,
 body.light h2 {
-	font-family: 'geomanistbold';
+	font-family: 'geomanistbold', sans-serif;
 }
 
 .lowercase {
