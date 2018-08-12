@@ -54,6 +54,12 @@ body.light {
 	height: 30px;
 }
 
+#particle-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
 body a {
    cursor: url(../img/cursor-f-1x.png) 6 6,auto;
    cursor: -webkit-image-set(url(../img/cursor-f-1x.png) 1x,url(../img/cursor-f-2x.png) 2x) 6 6,auto;
