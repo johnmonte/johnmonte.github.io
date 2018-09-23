@@ -275,6 +275,9 @@ section {
 	.email {
 		margin-top: 30px;
 	}
+	.large:after {
+		position: static;
+	}
 }
 
 ::-moz-selection {
