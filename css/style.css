@@ -182,8 +182,8 @@ blockquote {
 	right: 2em;
 	width: 1.5em;
 	background: #1f1c1d;
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
+	-webkit-transform: skewX(-21deg);
+	transform: skewX(-21deg);
 	-webkit-transform-origin: right bottom;
 	transform-origin: right bottom;
 	z-index: -1;
