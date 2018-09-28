@@ -119,6 +119,8 @@ blockquote {
 
 .header {
 	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
 	float: left;
 	width: 100%;
 }
@@ -203,12 +205,11 @@ body.light h2 {
 }
 
 .top {
-	padding-top: 60px;
+	padding: 15px 0;
 }
 
 .bottom {
-	padding-bottom: 30px;
-	margin-top: 10px;
+
 }
 
 .last {
@@ -224,6 +225,7 @@ section {
 	line-height: 26px;
 	letter-spacing: 0;
 	display: block;
+	padding-top: 30px;
 }
 
 .email i {
