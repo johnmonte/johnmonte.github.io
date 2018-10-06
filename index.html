@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="icons/icons.css">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     </head>
     <body>
 	<div class="container">
@@ -29,7 +30,8 @@
 		<section class="hero wow fadeIn">
 			<div class="row">
 				<div class="col-md-10">
-					<h1 class="large top lowercase">I am John Monte, a digital designer with over a decade of experience, solving problems through curiosity and good design.</h1>
+					<div class="subtitle"><span class="typed"></span> </div>
+					<h1 class="large top lowercase">My name is John Monte and I am a digital designer with over a decade of experience, solving problems through curiosity and design.</h1>
 				</div>
 			</div>
 		</section>
@@ -46,30 +48,36 @@
 				</div>
 			</div>
 		</section>
-		<section id="work" class="work wow fadeIn" data-wow-delay="1s">
+		<section id="work" class="work wow fadeIn">
 			<div class="row">
-				<div class="col-md-10">
-					<p class="large lowercase">Looking for my designs? Shoot me an email about your project and I'll prepare a detailed portfolio with relevant work samples.</h1>
+				<div class="col-md-12">
+					<h2 class="large lowercase title"><span>Featured Work</span>Wegacha — helping small businesses grow and succeed through digital solutions</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="gallery js-flickity">
+						<div class="gallery-cell"><img src="img/portfolio/wegacha01.jpg"></div>
+						<div class="gallery-cell"><img src="img/portfolio/wegacha02.jpg"></div>
+						<div class="gallery-cell"><img src="img/portfolio/wegacha03.jpg"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="list">
+					<li>Project: Wegacha</li>
+					<li>Role: Branding &amp; Product Design</li>
+					<li><a href="https://www.dropbox.com/sh/limwyipu2rf95mo/AAC_YC0MeVe2NZTzLsswVVr5a?dl=0" target="_blank">View screenshots →</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8">				
+					<p>Wegacha was born out of an idea to deliver peer-reviewed services by pre-vetted professionals. I was entrusted with everything creative and technical—from logo and website design, to front-end coding and CMS integration. Launched in 2017, Wegacha is now among Florida's fastest growing businesses and one of the top marketing companies in Miami.</p>
+					<blockquote>“His knowledge, dedication and experience has no boundaries. His communication skills are impeccable. Great person to work with.” — Andres Aguerrevere, CEO</blockquote>
 				</div>
 			</div>
 		</section>
-		<section id="testimonials" class="testimonials wow fadeIn" data-wow-delay="1s">
-			<div class="row">
-				<div class="col-md-4">
-					<blockquote>Thanks to John's redesign, our website now performs way better than before. If you get a chance to work with him, don’t miss it.</blockquote>
-					<div class="author">Fred, Manila PH</div>
-				</div>
-				<div class="col-md-4">
-					<blockquote>His knowledge, dedication and experience has no boundaries. His communication skills are impeccable. Great person to work with.</blockquote>
-					<div class="author">Andres, Miami FL</div>
-				</div>
-				<div class="col-md-4">
-					<blockquote>Absolute please to work with; very knowledgeable and puts a lot of effort into his work. Recommended to all.</blockquote>
-					<div class="author">Brett, Perth AU</div>
-				</div>
-			</div>
-		</section>
-		<section id="contact" class="contact last wow fadeIn" data-wow-delay="1s">
+		<section id="contact" class="contact last wow fadeIn">
 			<div class="row">
 				<div class="col-md-10">
 					<p class="large bottom lowercase">If you want to know more, say hello or if you're a Nigerian prince who wants to send me a lot of money, feel free to get in touch.</p>
@@ -93,6 +101,8 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
