@@ -35,5 +35,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 $('.gallery').flickity({
-  wrapAround: true
+  wrapAround: true,
+  imagesLoaded: true
 });
