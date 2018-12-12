@@ -74,7 +74,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: #111;
+	color: #89724E;
 	text-decoration: none;
 	outline: 0;
 }
@@ -255,7 +255,8 @@ section {
 
 .email i {
 	margin-right: 5px;
-	margin-bottom: 5px;
+	font-size: 24px;
+	vertical-align: bottom;
 }
 
 .gallery {
