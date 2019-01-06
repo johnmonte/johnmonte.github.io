@@ -232,7 +232,7 @@ ul.menu li a:hover {
 }
 
 .yt-desktop img,
-.yt-logo-icon img {
+.yt-logo-icon {
 	opacity: 0.2;
 	height: 25px;
     -o-transition: .5s;
