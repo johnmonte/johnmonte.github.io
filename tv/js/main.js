@@ -76,6 +76,8 @@ if (player.getPlayerState() == 1) {
 	};
 	document.getElementById("video").innerHTML =               
     "<a class='title' title='"+ player.getVideoData().title +"' href='https://www.youtube.com/watch?v="+ player.getVideoData().video_id + "' target = '_blank'>"+ player.getVideoData().title + "</a>";
+	document.getElementById("yt-mobile").innerHTML =               
+    "<a class='yt-logo-icon' title='"+ player.getVideoData().title +"' href='https://www.youtube.com/watch?v="+ player.getVideoData().video_id + "' target = '_blank'><img src='../tv/img/yt-logo-icon.png'></a>";
 } else {
 	document.getElementById('resume').onclick = function() {
 		player.playVideo();
@@ -114,7 +116,10 @@ $(function () {
             $('.audio').css({
                 opacity: '0.2'
             });
-            $('.yt').css({
+            $('.yt-desktop').css({
+                opacity: '1'
+            });
+            $('.yt-logo-icon').css({
                 opacity: '1'
             });
             fadeInBuffer = false;
@@ -136,9 +141,12 @@ $(function () {
             $('.audio').css({
                 opacity: '0'
             });
-            $('.yt').css({
+            $('.yt-desktop').css({
                 opacity: '0'
-            });			
+            });	
+            $('.yt-logo-icon').css({
+                opacity: '0'
+            });					
             fadeInBuffer = true;
         }, 2000)
     });

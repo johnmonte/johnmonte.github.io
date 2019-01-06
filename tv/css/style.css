@@ -231,7 +231,8 @@ ul.menu li a:hover {
 	opacity: 1 !important;
 }
 
-.yt img {
+.yt-desktop img,
+.yt-logo-icon img {
 	opacity: 0.2;
 	height: 25px;
     -o-transition: .5s;
@@ -313,6 +314,10 @@ fieldset {
 	border-color:transparent;
 }
 
+.yt-mobile {
+	display: none;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
 }
@@ -381,14 +386,20 @@ fieldset {
 		max-width: 300px;
 		height: 21px;
 	}
-	.yt img {
+	.yt-desktop img {
 		height: 20px;
 	}
 }
 
 @media(max-width:667px) {
-	.yt img {
+	.yt-desktop, .title, ul.uppernav {
 		display: none;
+	}
+	.yt-mobile {
+		display: inline-block !important;
+	}
+	.yt-logo-icon img {
+		height: 20px;
 	}
 }
 
