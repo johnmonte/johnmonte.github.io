@@ -231,8 +231,7 @@ ul.menu li a:hover {
 	opacity: 1 !important;
 }
 
-.yt-desktop img,
-.yt-logo-icon {
+.yt-desktop img {
 	opacity: 0.2;
 	height: 25px;
     -o-transition: .5s;
@@ -240,6 +239,19 @@ ul.menu li a:hover {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;	
+}
+
+.yt-logo-icon {
+	float: left;
+	font-size: 28px !important;
+	line-height: 30px !important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+	opacity: 0.2;
+	display: block;
 }
 
 .modal.fancybox-content {
@@ -398,8 +410,19 @@ fieldset {
 	.yt-mobile {
 		display: inline-block !important;
 	}
+	.yt-logo-icon {
+		font-size: 20px !important;
+		line-height: 20px !important;
+	}
 	.yt-logo-icon img {
 		height: 20px;
+	}
+	.audio, .yt-logo-icon {
+		opacity: 0.5 !important;
+		padding: 5px;
+	}
+	.np {
+		left: 15px;
 	}
 }
 

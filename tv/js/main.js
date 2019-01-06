@@ -17,7 +17,8 @@ function onYouTubeIframeAPIReady() {
 			'modestbranding': 1,
 			'rel': 0,
 			'mute': 1,
-			'showinfo': 0
+			'showinfo': 0,
+			'playsinline': 1
 		},
 		events: {
 			'onReady': onPlayerReady,
@@ -120,7 +121,7 @@ $(function () {
                 opacity: '1'
             });
             $('.yt-logo-icon').css({
-                opacity: '1'
+                opacity: '0.2'
             });
             fadeInBuffer = false;
         }
