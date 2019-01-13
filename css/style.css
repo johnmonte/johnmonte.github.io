@@ -93,7 +93,7 @@ h2 {
 	font-size: 40px;
 	line-height: 48px;
 	margin-top: 0;
-	font-family: 'geomanistmedium', sans-serif;
+	font-family: 'geomanistbook', sans-serif;
 	letter-spacing: -0.5px;
 }
 
@@ -173,7 +173,7 @@ blockquote {
 .large {
 	line-height: 68px;
 	letter-spacing: -1px;
-	font-family: 'geomanistmedium', sans-serif;
+	font-family: 'geomanistbook', sans-serif;
 	font-size: 60px;
 	margin: .67em 0;
 	display: block;
