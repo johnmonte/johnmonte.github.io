@@ -29,6 +29,7 @@ body {
 a, a:hover, a:focus {
 	color: #fff;
 	text-decoration: none;
+	outline: none;
 }
 
 .video-background {
@@ -49,7 +50,7 @@ a, a:hover, a:focus {
 
 .upperleft {
 	position: absolute;
-	top: 27px;
+	top: 28px;
 	left: 30px;
 }
 .lowerleft {
@@ -113,9 +114,9 @@ a, a:hover, a:focus {
 	left: 30px;
 	text-align: left;
 	text-transform: lowercase;
-	font-size: 30px;
+	font-size: 31px;
 	/*line-height: 40px;*/
-	line-height: 30px;
+	line-height: 31px;
 	z-index: 2;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -137,8 +138,8 @@ ul.lowernav {
 }
 ul.menu {
 	text-transform: lowercase;
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 31px;
+	line-height: 31px;
 	height: 30px;
 	z-index: 2;
 	padding: 0;
@@ -198,7 +199,7 @@ ul.menu li a:hover {
 .audio {
 	float: left;
 	font-size: 28px !important;
-	line-height: 30px !important;
+	line-height: 33px !important;
 	cursor: pointer;
 	margin-right: 10px;
     -o-transition: .5s;
@@ -219,7 +220,7 @@ ul.menu li a:hover {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 800px;
-	height: 31px;
+	height: 33px;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;

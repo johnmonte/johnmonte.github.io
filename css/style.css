@@ -71,6 +71,7 @@ a {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
+	outline: none;
 }
 
 a:hover, a:focus {
