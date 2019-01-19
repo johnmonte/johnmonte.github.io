@@ -264,8 +264,8 @@ section {
 }
 
 .gallery-cell {
-	width: 66%;
-	margin-right: 10px;
+	width: 70%;
+	margin: 0;
 }
 
 .flickity-prev-next-button,
