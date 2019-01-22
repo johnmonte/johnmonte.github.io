@@ -1,4 +1,4 @@
-new WOW().init();
+//new WOW().init();
 
 var $corner = $(".border"),
     $window = $(window);
@@ -6,7 +6,7 @@ var $corner = $(".border"),
 $window.scroll(function() {    
     var scroll = $window.scrollTop();
 
-    if (scroll >= 790) {
+    if (scroll >= 1820) {
         $corner.addClass("light");
     } else {
         $corner.removeClass("light");
@@ -19,7 +19,7 @@ var $body = $("body"),
 $window.scroll(function() {    
     var scroll = $window.scrollTop();
 
-    if (scroll >= 790) {
+    if (scroll >= 1820) {
         $body.addClass("light");
     } else {
         $body.removeClass("light");

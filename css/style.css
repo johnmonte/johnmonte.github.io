@@ -65,7 +65,7 @@ body {
 }*/
 
 a {
-	color: #231f20;
+	color: #fff;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -78,6 +78,14 @@ a:hover, a:focus {
 	color: #89724E;
 	text-decoration: none;
 	outline: 0;
+}
+
+.light a {
+	color: #231f20;
+}
+
+.light a:hover, .light a:focus {
+	color: #89724E;
 }
 
 img {
@@ -184,8 +192,8 @@ blockquote {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	right: 2em;
-	width: 1.25em;
+	right: 1.6em;
+	width: 1.3em;
 	background: #1f1c1d;
 	-webkit-transform: skewX(-21deg);
 	transform: skewX(-21deg);
@@ -286,6 +294,12 @@ section {
 	}
 	section {
 		padding: 15px 0 30px 0;
+	}
+}
+
+@media only screen and (max-width: 989px) {
+	.large:after {
+		position: static;
 	}
 }
 
