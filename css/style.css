@@ -268,7 +268,7 @@ section {
 }
 
 .gallery {
-	margin: 20px 0 50px 0;
+	margin: 20px 0 80px 0;
 }
 
 .gallery-cell {
@@ -276,9 +276,16 @@ section {
 	margin: 0;
 }
 
-.flickity-prev-next-button,
-.flickity-page-dots {
+.flickity-prev-next-button {
 	display: none;
+}
+
+.flickity-page-dots {
+	bottom: -40px !important;
+}
+
+.flickity-page-dots .dot {
+
 }
 
 @media only screen and (max-width: 1025px) {
