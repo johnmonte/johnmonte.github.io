@@ -20,6 +20,7 @@ body.light {
 	background-color: #1f1c1d;
 	z-index: 999999;
 	transition: background-color .5s;
+	border: none !important;
 }
 
 .border.light {
@@ -131,8 +132,8 @@ blockquote {
 .header {
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding-bottom: 40px;
-	float: left;
+	padding-bottom: 10px;
+	display: block;
 	width: 100%;
 }
 
@@ -145,7 +146,7 @@ blockquote {
 	line-height: 70px;
 	color: #231f20;
 	max-width: 190px;
-	float: left;
+	display: block;
 }
 
 .logo img {
@@ -288,6 +289,12 @@ section {
 
 }
 
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1170px !important;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	.large:after {
 		position: static;
@@ -358,8 +365,4 @@ img::selection {
 
 img::-moz-selection {
     background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: #231f20;
 }
