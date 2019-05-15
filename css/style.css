@@ -322,14 +322,14 @@ section {
 		max-width: 150px;
 	}
 	h1, .large {
-		font-size: 40px;
+		font-size: 48px;
+		line-height: 54px;
 	}
 	.about h2,
 	.about p {
 		margin-bottom: 30px;
 	}
-	.large,
-	h2.large, h2 {
+	h2 {
 		line-height: 48px;
 		word-wrap: break-word;
 	}
