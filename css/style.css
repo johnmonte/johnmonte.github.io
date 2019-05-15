@@ -243,7 +243,7 @@ body.light h2 {
 }
 
 .bottom {
-
+	margin-bottom: 60px;
 }
 
 .last {
@@ -259,7 +259,7 @@ section {
 	line-height: 26px;
 	letter-spacing: 0;
 	display: block;
-	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .email i {
@@ -344,6 +344,9 @@ section {
 	}
 	.gallery-cell {
 		width: 100% !important;
+	}
+	.bottom {
+		margin-bottom: .67em;
 	}
 }
 
