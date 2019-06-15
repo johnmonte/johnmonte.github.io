@@ -1,3 +1,7 @@
+html {
+	overflow-x: hidden;
+}
+
 body {
 	font-family: 'geomanistregular', sans-serif;
 	font-size: 18px;
@@ -13,6 +17,10 @@ body {
 body.light {
 	background-color: #fff;
 	color: #231f20;
+}
+
+.cursor {
+	display: none;
 }
 
 .border {
@@ -54,16 +62,6 @@ body.light {
 	width: 100%;
 	height: 30px;
 }
-
-/*body a {
-   cursor: url(../img/cursor-f-1x.png) 6 6,auto;
-   cursor: -webkit-image-set(url(../img/cursor-f-1x.png) 1x,url(../img/cursor-f-2x.png) 2x) 6 6,auto;
-}
-
-body {
-    cursor: url(../img/cursor-o-1x.png) 6 6,default;
-    cursor: -webkit-image-set(url(../img/cursor-o-1x.png) 1x,url(../img/cursor-o-2x.png) 2x) 6 6,default;
-}*/
 
 a {
 	color: #fff;
@@ -287,6 +285,26 @@ section {
 
 .flickity-page-dots .dot {
 
+}
+
+@media (any-pointer: fine) {
+	.cursor {
+		display: block;
+	}
+	.cursor__inner {
+		z-index: 9999;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		mix-blend-mode: difference;
+		border-radius: 50%;
+	}
+	.cursor__inner--circle {
+		width: 25px;
+		height: 25px;
+		border: 1px solid #89724E;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
