@@ -102,7 +102,7 @@ $('.gallery').flickity({
             requestAnimationFrame(() => this.render());
         }
         enter() {
-            this.scale = 1.5;
+            this.scale = 3;
         }
         leave() {
             this.scale = 1;

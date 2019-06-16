@@ -292,7 +292,7 @@ section {
 		display: block;
 	}
 	.cursor__inner {
-		z-index: 9999;
+		z-index: 999999;
 		pointer-events: none;
 		position: absolute;
 		top: 0;
@@ -301,9 +301,9 @@ section {
 		border-radius: 50%;
 	}
 	.cursor__inner--circle {
-		width: 25px;
-		height: 25px;
-		border: 1px solid #89724E;
+		width: 10px;
+		height: 10px;
+		background: #ad9571;
 	}
 }
 
