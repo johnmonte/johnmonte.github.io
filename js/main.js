@@ -1,5 +1,11 @@
 //new WOW().init();
 
+var $loader = document.querySelector('.loader')
+
+window.onload = function() {
+  $loader.classList.remove('loader--active')
+};
+
 var $corner = $(".border"),
     $window = $(window);
 
