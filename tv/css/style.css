@@ -91,7 +91,7 @@ a, a:hover, a:focus {
 	text-transform: uppercase;
 }
 .logo img {
-	height: 26px;
+	height: 25px;
 	vertical-align: bottom;
 }
 #resume:hover + .logo {
