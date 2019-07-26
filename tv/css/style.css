@@ -91,7 +91,7 @@ a, a:hover, a:focus {
 	text-transform: uppercase;
 }
 .logo img {
-	height: 21px;
+	height: 26px;
 	vertical-align: bottom;
 }
 #resume:hover + .logo {
@@ -129,7 +129,7 @@ ul.uppernav {
 	position: absolute;
 	top: 30px;
 	/*left: 120px;*/
-	left: 180px;
+	left: 200px;
 }
 ul.lowernav {
 	position: absolute;
