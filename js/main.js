@@ -6,6 +6,14 @@ window.onload = function() {
   $loader.classList.remove('loader--active')
 };
 
+document.querySelector('.load').addEventListener('click', function () {
+  $loader.classList.add('loader--active')
+  
+  window.setTimeout(function () {
+    $loader.classList.remove('loader--active')
+  }, 5000)
+})
+
 var $corner = $(".border"),
     $window = $(window);
 
@@ -43,6 +51,28 @@ document.addEventListener('DOMContentLoaded', function(){
 $('.gallery').flickity({
   wrapAround: true,
   imagesLoaded: true
+});
+
+$(document).ready(function() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) {
+			$('.go-top').fadeIn(800);
+		} else {
+			$('.go-top').fadeOut(800);
+		}
+	});
+	$('.go-top').click(function(event) {
+		event.preventDefault();
+		
+		$('html, body').animate({scrollTop: 0}, 800);
+	})
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 0) {
+			$('.scroll').fadeOut(800);
+		} else {
+			$('.scroll').fadeIn(800);
+		}
+	});	
 });
 
 {

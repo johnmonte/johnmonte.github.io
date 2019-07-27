@@ -282,6 +282,7 @@ blockquote {
 	-webkit-transform-origin: right bottom;
 	transform-origin: right bottom;
 	z-index: -1;
+display: none;
 }
 
 .large span {
@@ -375,6 +376,22 @@ section {
 
 }
 
+.scroll,
+.go-top {
+	position: fixed;
+	bottom: 70px;
+	right: 80px;
+	text-decoration: none;
+	text-transform: lowercase;
+	transform: rotate(90deg);
+	transform-origin: bottom right;
+	letter-spacing: 0.5px;
+}
+
+.go-top {
+	display: none;
+}
+
 @media (any-pointer: fine) {
 	.cursor {
 		display: block;
@@ -392,6 +409,13 @@ section {
 		width: 10px;
 		height: 10px;
 		background: #ad9571;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.scroll,
+	.go-top {
+		display: none !important;
 	}
 }
 
@@ -420,6 +444,9 @@ section {
 	}
 	section {
 		padding: 15px 0 30px 0;
+	}
+	.cursor {
+		display: none;
 	}
 }
 
