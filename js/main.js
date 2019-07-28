@@ -1,4 +1,4 @@
-//new WOW().init();
+new WOW().init();
 
 var $loader = document.querySelector('.loader')
 
