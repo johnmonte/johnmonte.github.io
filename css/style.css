@@ -453,6 +453,9 @@ section {
 	section {
 		padding: 15px 0 30px 0;
 	}
+	[data-scroll-content] {
+		padding: 15px 0 30px 0;
+	}
 	.cursor {
 		display: none;
 	}
