@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-body, html { font-size: 100%; 	padding: 0; margin: 0;}
+body, html { font-size: 100%; width: 100%; height: 100%; padding: 0; margin: 0; }
 
 *,
 *:after,
@@ -30,6 +30,116 @@ a, a:hover, a:focus {
 	color: #fff;
 	text-decoration: none;
 	outline: none;
+}
+
+.overlay {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  pointer-events: none;
+  background: #fff;
+  opacity: 0;
+  -webkit-animation: black-part 4s;
+  -moz-animation: black-part 4s;
+  animation: black-part 4s;
+  z-index: 3;
+}
+.overlay:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #231f20;
+  box-shadow: 0 0 1px 1px #231f20;
+  -webkit-animation: white-part 1s;
+  -moz-animation: white-part 1s;
+  animation: white-part 1s;
+}
+
+@-webkit-keyframes black-part {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes black-part {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes black-part {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes white-part {
+  0% {
+    width: 0;
+    height: 0%;
+  }
+  75% {
+    width: 100%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@-moz-keyframes white-part {
+  0% {
+    width: 0;
+    height: 0%;
+  }
+  75% {
+    width: 100%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes white-part {
+  0% {
+    width: 0;
+    height: 0%;
+  }
+  75% {
+    width: 100%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .video-background {
