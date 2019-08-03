@@ -46,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function(){
         typeSpeed: 40,
 		loop: true
       });
+	  var element = document.getElementById("shy");
+	  element.classList.add("hideme");
 });
 
 $('.gallery').flickity({
