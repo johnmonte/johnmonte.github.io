@@ -242,6 +242,41 @@ blockquote {
 	vertical-align: unset;
 }
 
+.hideme {
+	-webkit-animation: hideme 5s; /* Safari 4.0 - 8.0 */
+	animation: hideme 0.4s forwards;
+	-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+	animation-delay: 3s;
+	overflow: hidden;
+}
+
+.hideme:hover {
+	-webkit-animation: unhideme 5s; /* Safari 4.0 - 8.0 */
+	animation: unhideme 0.4s forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hideme {
+  from {text-indent: 0px;}
+  to {text-indent: -95px;}
+}
+
+@keyframes hideme {
+  from {text-indent: 0px;}
+  to {text-indent: -95px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes unhideme {
+  from {text-indent: -95px;}
+  to {text-indent: 0px;}
+}
+
+@keyframes unhideme {
+  from {text-indent: -95px;}
+  to {text-indent: 0px;}
+}
+
 .topnav {
 	float: right;
 	margin: 0;
