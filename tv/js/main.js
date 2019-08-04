@@ -106,7 +106,7 @@ $(function () {
                 cursor: 'default'
             });
             $('.logo').css({
-                opacity: '1'
+                textIndent: '0px'
             });
             $('.title').css({
                 opacity: '0.2'
@@ -131,7 +131,7 @@ $(function () {
                 cursor: 'none'
             });
             $('.logo').css({
-                opacity: '0.5'
+                textIndent: '-90px'
             });
             $('.title').css({
                 opacity: '0'

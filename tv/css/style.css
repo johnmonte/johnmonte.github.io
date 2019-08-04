@@ -192,6 +192,7 @@ a, a:hover, a:focus {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
+	overflow: hidden;
 }
 .logo span {
 	position: absolute;
@@ -461,7 +462,7 @@ fieldset {
 	}
 	.logo img,
 	.menu img {
-		height: 14px;
+		height: 22px;
 	}
 	.upperleft {
 		top: 18px;
