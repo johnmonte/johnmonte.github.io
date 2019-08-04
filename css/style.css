@@ -243,10 +243,10 @@ blockquote {
 }
 
 .hideme {
-	-webkit-animation: hideme 5s; /* Safari 4.0 - 8.0 */
+	-webkit-animation: hideme 5s;
 	animation: hideme 0.4s forwards;
-	-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-	animation-delay: 3s;
+	/*-webkit-animation-delay: 2s;
+	animation-delay: 3s;*/
 	overflow: hidden;
 }
 
@@ -499,6 +499,24 @@ section {
 @media only screen and (max-width: 769px) {
 	.logo {
 		max-width: 150px;
+	}
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes hideme {
+	  from {text-indent: 0px;}
+	  to {text-indent: -75px;}
+	}
+	@keyframes hideme {
+	  from {text-indent: 0px;}
+	  to {text-indent: -75px;}
+	}
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes unhideme {
+	  from {text-indent: -75px;}
+	  to {text-indent: 0px;}
+	}
+	@keyframes unhideme {
+	  from {text-indent: -75px;}
+	  to {text-indent: 0px;}
 	}
 	h1, .large {
 		font-size: 48px;

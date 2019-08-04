@@ -46,8 +46,12 @@ document.addEventListener('DOMContentLoaded', function(){
         typeSpeed: 40,
 		loop: true
       });
-	  var element = document.getElementById("shy");
-	  element.classList.add("hideme");
+	  
+	  var hideOnLoad = setInterval(animateLogo, 4000);
+	  function animateLogo() {
+		  var element = document.getElementById("shy");
+		  element.classList.add("hideme");
+	  }
 });
 
 $('.gallery').flickity({
