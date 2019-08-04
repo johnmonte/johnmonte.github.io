@@ -21,6 +21,8 @@ body, html { font-size: 100%; width: 100%; height: 100%; padding: 0; margin: 0; 
 	clear: both;
 }
 
+html, body { overflow: hidden; }
+
 body {
 	color: #fff;
 	font-family: 'geomanistlight', sans-serif;
