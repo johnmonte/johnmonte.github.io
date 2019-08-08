@@ -131,7 +131,7 @@ $(function () {
                 cursor: 'none'
             });
             $('.logo').css({
-                textIndent: '-90px'
+                textIndent: '-92px'
             });
             $('.title').css({
                 opacity: '0'
