@@ -408,16 +408,8 @@ section {
 	margin: 0;
 }
 
-.flickity-prev-next-button {
-	display: none;
-}
-
 .flickity-page-dots {
 	bottom: -40px !important;
-}
-
-.flickity-page-dots .dot {
-
 }
 
 .scroll,
