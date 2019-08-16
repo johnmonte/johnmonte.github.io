@@ -20,7 +20,7 @@ var $corner = $(".border"),
 $window.scroll(function() {    
     var scroll = $window.scrollTop();
 
-    if (scroll >= 1820) {
+    if (scroll >= 3080) {
         $corner.addClass("light");
     } else {
         $corner.removeClass("light");
@@ -33,7 +33,7 @@ var $body = $("body"),
 $window.scroll(function() {    
     var scroll = $window.scrollTop();
 
-    if (scroll >= 1820) {
+    if (scroll >= 3080) {
         $body.addClass("light");
     } else {
         $body.removeClass("light");
