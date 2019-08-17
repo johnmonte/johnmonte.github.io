@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function(){
 $('.gallery').flickity({
   wrapAround: true,
   imagesLoaded: true,
+  lazyLoad: 3,
   prevNextButtons: false,
-  pageDots: false,
-  lazyLoad: 3
+  pageDots: false
 });
 
 $(document).ready(function() {
