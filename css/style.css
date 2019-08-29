@@ -464,6 +464,7 @@ section {
 }
 
 @media only screen and (max-width: 1400px) {
+	.fixed-top-left,
 	.scroll,
 	.go-top {
 		display: none !important;
