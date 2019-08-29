@@ -412,10 +412,16 @@ section {
 	bottom: -40px !important;
 }
 
-.scroll,
+.scroll {
+	position: absolute;
+}
 .go-top {
 	position: fixed;
-	bottom: 70px;
+}
+
+.scroll,
+.go-top {
+	bottom: 90px;
 	right: 80px;
 	text-decoration: none;
 	text-transform: lowercase;
@@ -426,6 +432,15 @@ section {
 
 .go-top {
 	display: none;
+}
+
+.fixed-top-left {
+	position: fixed;
+	top: 90px;
+	left: 60px;
+	transform-origin: top left;
+    transform: rotate(-90deg) translate3d(-100%,0,0);
+	text-transform: lowercase;
 }
 
 @media (any-pointer: fine) {
