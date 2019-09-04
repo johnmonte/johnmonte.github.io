@@ -430,6 +430,11 @@ section {
 	letter-spacing: 0.5px;
 }
 
+.scroll span,
+.go-top span {
+	margin-left: 5px;
+}
+
 .go-top {
 	display: none;
 }
