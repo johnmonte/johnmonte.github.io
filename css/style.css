@@ -422,7 +422,7 @@ section {
 .scroll,
 .go-top {
 	bottom: 90px;
-	right: 80px;
+	right: 100px;
 	text-decoration: none;
 	text-transform: lowercase;
 	transform: rotate(90deg);
@@ -446,7 +446,7 @@ section {
 .fixed-top-left {
 	position: fixed;
 	top: 90px;
-	left: 60px;
+	left: 80px;
 	transform-origin: top left;
     transform: rotate(-90deg) translate3d(-100%,0,0);
 	text-transform: lowercase;
@@ -456,7 +456,7 @@ section {
 .fixed-bottom-left {
 	position: fixed;
 	bottom: 90px;
-	left: 87px;
+	left: 107px;
 	transform-origin: bottom left;
     transform: rotate(-90deg);
 	text-transform: lowercase;
@@ -484,19 +484,6 @@ section {
 		width: 10px;
 		height: 10px;
 		background: #ad9571;
-	}
-}
-
-@media only screen and (min-width: 1601px) and (max-width: 1920px) {
-	.fixed-top-left {
-		left: 80px;
-	}
-	.fixed-bottom-left {
-		left: 107px;
-	}
-	.scroll,
-	.go-top {
-		right: 100px;
 	}
 }
 
