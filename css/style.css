@@ -487,7 +487,20 @@ section {
 	}
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1441px) {
+	.fixed-top-left {
+		left: 80px;
+	}
+	.fixed-bottom-left {
+		left: 107px;
+	}
+	.scroll,
+	.go-top {
+		right: 100px;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
 	.fixed-top-left,
 	.fixed-bottom-left,
 	.scroll,
