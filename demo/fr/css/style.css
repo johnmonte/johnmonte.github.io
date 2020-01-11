@@ -628,6 +628,9 @@ ul.social-share span:hover {
 	.awards .icon-block {
 		margin-bottom: 30px;
 	}
+	#videoBox.out {
+		display: none;
+	}
 }
 
 @media (max-width: 360px) {
