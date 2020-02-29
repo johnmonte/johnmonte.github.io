@@ -16,7 +16,7 @@ body {
 	line-height: 1.5em;
 	color: #fff;
 	padding: 30px;
-	background-color: #231f20;
+	background: #231f20 url(../img/bg.jpg) no-repeat 1160px -70px;
 	transition: background-color .5s;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -502,6 +502,9 @@ section {
 	.scroll,
 	.go-top {
 		display: none !important;
+	}
+	body {
+		background-image: none;
 	}
 }
 
