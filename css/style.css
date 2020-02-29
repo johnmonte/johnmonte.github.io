@@ -27,6 +27,10 @@ body.light {
 	color: #231f20;
 }
 
+.container-lg {
+
+}
+
 .loader {
   position: fixed;
   z-index: 999;
@@ -409,7 +413,7 @@ section {
 }
 
 .gallery-cell {
-	width: 50%;
+	width: 45%;
 	margin: 0;
 }
 
