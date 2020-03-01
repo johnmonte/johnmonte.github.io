@@ -89,6 +89,8 @@ var lazyLoadInstance = new LazyLoad({
     // ... more custom settings
 });
 
+var rellax = new Rellax('.rellax');
+
 {
     const MathUtils = {
         lineEq: (y2, y1, x2, x1, currentVal) => {

@@ -19,6 +19,7 @@ body {
 	background-color: #231f20;
 	background-repeat: no-repeat;
 	background-position: 1160px -70px;
+	background-size: 1000px 667px;
 	transition: background-color .5s;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -399,6 +400,20 @@ section {
 	width: 400px;
 	height: 575px;
 	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center left;
+	z-index: -1;
+}
+
+.img2 {
+	position: absolute;
+	content: '';
+	bottom: -140px;
+	right: 140px;
+	width: 500px;
+	height: 750px;
+	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center left;
 	z-index: -1;
 }
@@ -408,7 +423,7 @@ section {
 	line-height: 26px;
 	letter-spacing: 0;
 	display: block;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 
 .email i {
@@ -520,7 +535,8 @@ section {
 	body {
 		background-image: none !important;
 	}
-	.img1 {
+	.img1,
+	.img2 {
 		display: none;
 	}
 }
