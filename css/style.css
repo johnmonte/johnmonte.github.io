@@ -408,7 +408,7 @@ section {
 .img2 {
 	position: absolute;
 	content: '';
-	bottom: -140px;
+	bottom: -110px;
 	right: 140px;
 	width: 500px;
 	height: 750px;
