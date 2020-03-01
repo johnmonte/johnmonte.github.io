@@ -16,7 +16,9 @@ body {
 	line-height: 1.5em;
 	color: #fff;
 	padding: 30px;
-	background: #231f20 url(../img/bg.jpg) no-repeat 1160px -70px;
+	background-color: #231f20;
+	background-repeat: no-repeat;
+	background-position: 1160px -70px;
 	transition: background-color .5s;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -389,6 +391,18 @@ section {
 	padding: 30px 0 60px 0;
 }
 
+.img1 {
+	position: absolute;
+	content: '';
+	top: 635px;
+	left: -55px;
+	width: 400px;
+	height: 575px;
+	background-repeat: no-repeat;
+	background-position: center left;
+	z-index: -1;
+}
+
 .email {
 	font-size: 18px;
 	line-height: 26px;
@@ -504,7 +518,10 @@ section {
 		display: none !important;
 	}
 	body {
-		background-image: none;
+		background-image: none !important;
+	}
+	.img1 {
+		display: none;
 	}
 }
 

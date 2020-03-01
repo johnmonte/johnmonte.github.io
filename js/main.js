@@ -84,6 +84,11 @@ $(document).ready(function() {
 	});	
 });
 
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // ... more custom settings
+});
+
 {
     const MathUtils = {
         lineEq: (y2, y1, x2, x1, currentVal) => {
