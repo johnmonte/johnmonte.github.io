@@ -1,3 +1,7 @@
+jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
+
 new WOW().init();
 
 var $loader = document.querySelector('.loader')
