@@ -333,7 +333,7 @@ ul.menu li a:hover {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 800px;
-	height: 33px;
+	height: 34px;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;

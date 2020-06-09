@@ -1,4 +1,4 @@
-var playlistId = "PLmDfRlcNSWvugIiCBgepuo4eDtmNK8bry";
+var playlistId = "PLmDfRlcNSWvvu_f1vt77pqiTnEy3fdfkG";
 var tag = document.createElement('script');
 	tag.src = "https://www.youtube.com/iframe_api";
 
@@ -109,19 +109,19 @@ $(function () {
                 textIndent: '0px'
             });
             $('.title').css({
-                opacity: '0.2'
+                opacity: '0.3'
             });
             $('.menu').css({
                 opacity: '1'
             });
             $('.audio').css({
-                opacity: '0.2'
+                opacity: '0.3'
             });
             $('.yt-desktop').css({
                 opacity: '1'
             });
             $('.yt-logo-icon').css({
-                opacity: '0.2'
+                opacity: '0.3'
             });
             fadeInBuffer = false;
         }
