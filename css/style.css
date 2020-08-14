@@ -466,6 +466,7 @@ section {
 	transform: rotate(90deg);
 	transform-origin: bottom right;
 	letter-spacing: 0.5px;
+display: none !important; /* hidden due to live chat widget */
 }
 
 .scroll span,
@@ -664,12 +665,12 @@ section {
 	.large:after {
 		position: static;
 	}
-	/*.gallery {
+	.gallery {
 		margin: 0 0 30px 0;
 	}
 	.gallery-cell {
 		width: 100% !important;
-	}*/
+	}
 	.bottom {
 		margin-bottom: .67em;
 	}
