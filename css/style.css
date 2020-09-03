@@ -466,7 +466,7 @@ section {
 	transform: rotate(90deg);
 	transform-origin: bottom right;
 	letter-spacing: 0.5px;
-display: none !important; /* hidden due to live chat widget */
+/*display: none !important;*/ /* hide for live chat widget */
 }
 
 .scroll span,
