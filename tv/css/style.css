@@ -277,7 +277,7 @@ ul.menu li a {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
-	opacity: 0.2;
+	opacity: 0.5;
 	cursor: pointer;
 }
 ul.menu li a:hover {
@@ -293,7 +293,7 @@ ul.menu li a:hover {
 	line-height: 30px;
 	height: 30px;
 	z-index: 2;
-	opacity: 0.2;
+	opacity: 0.5;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -320,7 +320,7 @@ ul.menu li a:hover {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
-	opacity: 0.2;
+	opacity: 0.5;
 	display: block;
 }
 .audio:hover {
@@ -333,20 +333,20 @@ ul.menu li a:hover {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 800px;
-	height: 33px;
+	height: 34px;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
-	opacity: 0.2;
+	opacity: 0.5;
 }
 .title:hover {
 	opacity: 1 !important;
 }
 
 .yt-desktop img {
-	opacity: 0.2;
+	opacity: 0.5;
 	height: 25px;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -364,7 +364,7 @@ ul.menu li a:hover {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
-	opacity: 0.2;
+	opacity: 0.5;
 	display: block;
 }
 

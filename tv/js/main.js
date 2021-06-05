@@ -109,19 +109,19 @@ $(function () {
                 textIndent: '0px'
             });
             $('.title').css({
-                opacity: '0.2'
+                opacity: '0.5'
             });
             $('.menu').css({
                 opacity: '1'
             });
             $('.audio').css({
-                opacity: '0.2'
+                opacity: '0.5'
             });
             $('.yt-desktop').css({
                 opacity: '1'
             });
             $('.yt-logo-icon').css({
-                opacity: '0.2'
+                opacity: '0.5'
             });
             fadeInBuffer = false;
         }
