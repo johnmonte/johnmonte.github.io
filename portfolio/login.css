@@ -1,6 +1,5 @@
 body {
-	font-family: 'geomanistregular', sans-serif;
-	font-weight: 300;
+	font-family: 'geomanistlight', sans-serif;
 	letter-spacing: 1px;
 	background: #231f20;
 	color: #fff;
@@ -79,7 +78,7 @@ input:hover:focus::-ms-placeholder {
 }
 
 input {
-	font-family: 'geomanistregular', sans-serif;
+	font-family: 'geomanistlight', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -108,9 +107,8 @@ input:hover {
 	height: 50px;
 	padding: 0;
 	margin: 0 0px 0px -6px;
-	font-family: 'Geomanist', sans-serif;
+	font-family: 'geomanistlight', sans-serif;
 	font-size: 16px;
-	font-weight: 300;
 	letter-spacing: 1px;
 	color: #fff;
 	outline:none;
