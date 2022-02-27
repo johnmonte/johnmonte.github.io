@@ -92,6 +92,10 @@ a:focus {
 	font-weight: 400;
 }
 
+.frame__subtitle {
+	margin: 0.5rem 0;
+}
+
 .menu {
 	padding: 10rem 0 20vh 0;
 	width: 90vw;
@@ -230,13 +234,13 @@ a:focus {
 	display: none;
 }
 
-.credits {
+.more {
 	align-self: flex-start;
 	padding: 5rem 0 0 0;
 	letter-spacing: 1px;
 }
 
-.credits a {
+.more a {
 	text-decoration: none;
 }
 
@@ -249,6 +253,10 @@ a:focus {
 		height: 50vh;
 		pointer-events: none;
 		padding-bottom: 0;
+	}
+	.frame__subtitle {
+		margin: 0.5rem 0 2rem;
+		justify-self: start;
 	}
 	.menu {
 		padding-top: 20vh;
@@ -280,7 +288,7 @@ a:focus {
 		stroke-width: var(--cursor-stroke-width);
 		opacity: 0.3;
 	}
-	.credits {
+	.more {
 		padding-left: 25vw;
 	}
 }
