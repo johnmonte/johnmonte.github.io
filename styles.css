@@ -421,11 +421,11 @@ margin-top: 0;
   position: fixed;
   bottom: 20px;
   left: 50%;
-  margin-left: -174px;
+  margin-left: -178px;
   margin-top: 5px;
   margin-bottom: 5px;
   float: none;
-  min-width: 348px;
+  min-width: 356px;
   background: #1a1a1a;
   color: #777;
   padding: 15px 20px;
@@ -454,6 +454,32 @@ margin-top: 0;
           animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+::-moz-selection {
+  text-shadow: none;
+color: #fff;
+  background: #1a1a1a;
+}
+
+::selection {
+  text-shadow: none;
+color: #fff;
+  background: #1a1a1a;
+}
+
+img::selection {
+  background: 0 0;
+}
+
+img::-moz-selection {
+  background: 0 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .card {
+    margin-top: 30px;
+  }
 }
 
 /* MailtoUI */
