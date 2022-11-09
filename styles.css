@@ -420,12 +420,15 @@ margin-top: 0;
   z-index: 99;
   position: fixed;
   bottom: 20px;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   float: none;
-  min-width: 230px;
+  min-width: 340px;
   background: #1a1a1a;
   color: #777;
   padding: 15px 20px;
-  margin: 5px auto;
   border-radius: 5px;
   font-size: 14px;
 }
