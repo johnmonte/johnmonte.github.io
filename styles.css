@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:400,500|Inter:400,500,600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  background-color: #1f1f1f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+.card {
+  max-width: 340px;
+  min-width: 340px;
+  margin: auto;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color:#222;
+  display: -webkit-box;
+  display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+}
+
+.card[data-state="#about"] {
+  height: 450px;
+}
+.card[data-state="#about"] .card-main {
+  padding-top: 0;
+}
+
+.card[data-state="#contact"] {
+  height: 450px;
+}
+
+.card[data-state="#experience"] {
+  height: 450px;
+}
+
+.card.is-active .card-header {
+  height: 80px;
+}
+.card.is-active .card-cover {
+  height: 100px;
+  top: -50px;
+}
+.card.is-active .card-avatar {
+  -webkit-transform: none;
+          transform: none;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+}
+.card.is-active .card-fullname,
+.card.is-active .card-jobtitle {
+  left: 86px;
+  -webkit-transform: none;
+          transform: none;
+}
+.card.is-active .card-fullname {
+  bottom: 18px;
+  font-size: 19px;
+}
+.card.is-active .card-jobtitle {
+  bottom: 16px;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+
+.card-header {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+.card-header * {
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+
+.card-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  height: 160px;
+  top: -20%;
+  left: 0;
+  will-change: top;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+}
+
+.card-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-64px);
+          transform: translateX(-50%) translateY(-64px);
+}
+
+.card-fullname {
+  position: absolute;
+  bottom: 0;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transform: translateY(-10px) translateX(-50%);
+          transform: translateY(-10px) translateX(-50%);
+  left: 50%;
+}
+
+.card-jobtitle {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: 500;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-7px);
+          transform: translateX(-50%) translateY(-7px);
+}
+
+.card-main {
+  position: relative;
+  -webkit-box-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: flex;
+  padding-top: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+  display: none;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-desc {
+  line-height: 1.6;
+  color: #aaa;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.card-social {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.card-social svg {
+  fill: #777;
+  width: 16px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card-social a {
+  color: #777;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card-social a:hover svg {
+  fill: #fff;
+}
+.card-social a:last-child {
+  margin-right: 0;
+}
+
+.card-buttons {
+  display: -webkit-box;
+  display: flex;
+  background-color: #222;
+  margin-top: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+.card-buttons button {
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: 0;
+  font-size: 13px;
+  border: 0;
+  padding: 15px 5px;
+  cursor: pointer;
+  color: #777;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: 0;
+  border-bottom: 3px solid transparent;
+}
+.card-buttons button.is-active, .card-buttons button:hover {
+  color: #eee;
+  border-bottom: 3px solid #777;
+}
+
+.card-section {
+  display: none;
+}
+.card-section.is-active {
+  display: block;
+  -webkit-animation: fadeIn 0.6s both;
+          animation: fadeIn 0.6s both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(40px);
+            transform: translatey(40px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(40px);
+            transform: translatey(40px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card-timeline {
+margin-top: 0;
+  position: relative;
+}
+.card-timeline:after {
+ background: -webkit-gradient(linear, left bottom, left top, from(rgba(134, 214, 243, 0)), to(#777));
+  background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, #777 100%);
+  content: "";
+  left: 42px;
+  width: 2px;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  content: "";
+}
+
+.card-item {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+.card-item:last-child {
+  padding-bottom: 5px;
+}
+.card-item:after {
+  content: attr(data-year);
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 37px;
+  width: 8px;
+  height: 8px;
+  line-height: 0.6;
+  border: 2px solid #222;
+  font-size: 11px;
+  text-indent: -35px;
+  border-radius: 50%;
+  color: rgba(134, 134, 134, 0.8);
+  background-color: #777;
+}
+
+.card-item-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #eee;
+}
+
+.card-item-desc {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+}
+
+.card-contact-wrapper {
+margin-top: 0;
+}
+
+.card-contact {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 13px;
+  color: #aaa;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+.card-contact + .card-contact {
+  margin-top: 16px;
+}
+.card-contact svg {
+  flex-shrink: 0;
+  width: 30px;
+  min-height: 34px;
+  margin-right: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-right: 12px;
+  border-right: 1px solid #1a1a1a;
+}
+
+.contact-me {
+  border: 0;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+
+.contact-me:hover,
+.contact-me:focus {
+  background-color: #111;
+}
+
+.popup {
+  z-index: 99;
+  position: fixed;
+  bottom: 20px;
+  float: none;
+  min-width: 230px;
+  background: #1a1a1a;
+  color: #777;
+  padding: 15px 20px;
+  margin: 5px auto;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.popup a {
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+.popup a:hover,
+.popup a:focus {
+  color: #fff;
+  border: none;
+}
+#close{
+  text-decoration:none;
+  float:right;
+  margin-left: 15px;
+}
+#popup {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.6s both;
+          animation: fadeIn 0.6s both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/* MailtoUI */
+
+.mailtoui-modal {
+  color: #777;
+  font-size: 90%;
+}
+
+.mailtoui-modal a:hover,
+.mailtoui-modal a:focus {
+  border-bottom: none;
+}
+
+.mailtoui-modal-close {
+  font-size: 28px;
+}
+
+.mailtoui-modal-close:focus,
+.mailtoui-modal-close:hover {
+ font-weight: 400; 
+}
+
+.mailtoui-modal-head {
+  background-color: #1a1a1a;
+}
+
+.mailtoui-modal-title {
+  color: #fff;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.mailtoui-modal-close:focus,
+.mailtoui-modal-close:hover {
+  color: #fff;
+}
+
+.mailtoui-modal-body {
+  background-color: #222;
+}
+
+.mailtoui-button-content,
+.mailtoui-button-copy {
+  background-color: #111;
+  color: #777;
+}
+
+.mailtoui-button:hover .mailtoui-button-content,
+.mailtoui-button:focus .mailtoui-button-content {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.mailtoui-modal-content {
+  border-radius: 10px;
+  background: #222;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+}
+
+.mailtoui-button-content {
+  box-shadow: none;
+}
+
+.mailtoui-button-content:hover,
+.mailtoui-button-content:focus,
+.mailtoui-button-copy:hover,
+.mailtoui-button-copy:focus {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.mailtoui-button-copy-clicked,
+.mailtoui-button-copy-clicked:hover,
+.mailtoui-button-copy-clicked:focus {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.mailtoui-email-address {
+  background-color: #1a1a1a;
+  color: #777;
+}
+
+.mailtoui-brand {
+  display: none;
+}
+
+/* End dark theme */
