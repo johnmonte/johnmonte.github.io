@@ -477,6 +477,9 @@ img::-moz-selection {
 }
 
 @media only screen and (max-width: 1080px) {
+  body {
+    padding: 0;
+  }
   .card {
     margin-top: 30px;
   }
