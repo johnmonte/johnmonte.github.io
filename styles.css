@@ -480,9 +480,9 @@ img::-moz-selection {
   body {
     padding: 0;
   }
-  .card {
+  /*.card {
     margin-top: 30px;
-  }
+  }*/
 }
 
 /* MailtoUI */
