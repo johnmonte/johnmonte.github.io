@@ -15,7 +15,7 @@ body {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px 20px 80px 20px;
   overflow: hidden;
 }
 
@@ -478,7 +478,7 @@ img::-moz-selection {
 
 @media only screen and (max-width: 1080px) {
   body {
-    padding: 0;
+    padding: 20px 0 80px 0;
   }
   /*.card {
     margin-top: 30px;
