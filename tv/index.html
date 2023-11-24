@@ -1,81 +1,213 @@
 <!DOCTYPE HTML>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Monte TV / Online Television</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Search Engine -->
-		<meta name="description" content="Monte TV is an online television for designers and non-designers who work with designers—showing videos about UX, UI, interaction, branding and product design.">
-		<meta name="image" content="https://madebymonte.com/tv/img/social/social.jpg">
-			<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-		<!-- Schema.org for Google -->
-		<meta itemprop="name" content="Monte TV / Online Television">
-		<meta itemprop="description" content="Monte TV is an online television for designers and non-designers who work with designers—showing videos about UX, UI, interaction, branding and product design.">
-		<meta itemprop="image" content="https://madebymonte.com/tv/img/social/social.jpg?v=2">
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="Monte TV / Online Television">
-		<meta name="twitter:description" content="Monte TV is an online television for designers and non-designers who work with designers—showing videos about UX, UI, interaction, branding and product design.">
-		<meta name="twitter:creator" content="@madebymonte">
-		<meta name="twitter:image:src" content="https://madebymonte.com/tv/img/social/twitter.jpg">
-		<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-		<meta name="og:title" content="Monte TV / Online Television">
-		<meta name="og:description" content="Monte TV is an online television for designers and non-designers who work with designers—showing videos about UX, UI, interaction, branding and product design.">
-		<meta name="og:image" content="https://madebymonte.com/tv/img/social/facebook.jpg?v=2">
-		<meta name="og:url" content="https://madebymonte.com/tv">
-		<meta name="og:site_name" content="Monte TV / Online Television">
-		<meta name="og:type" content="website">
-		<!-- Favicon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-		<link rel="manifest" href="../site.webmanifest">
-		<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#231f20">
-		<meta name="msapplication-TileColor" content="#231f20">
-		<meta name="theme-color" content="#231f20">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="../fonts/fonts.css">
-	</head>
-	
-	<body>
-		<div id="resume"></div>
-		<div class="logo upperleft"><img src="img/logo.svg"></div>
-		<ul class="menu uppernav upperright">
-			<li><a href="https://montetv.notepin.co/monte-tv-is-an-online-television-for-designers-and-nondesigners-yo58af2" target="_blank">About</a></li>
-			<li><a href="https://madebymonte.typeform.com/to/mR2wld" target="_blank">Feedback</a></li>
-			<li><a href="https://madebymonte.typeform.com/to/ROUCWA" target="_blank">Submit</a></li>
-		</ul>
-		<div class="video-background">
-			<div class="video-foreground">
-			  <div id="player"></div>
-			</div>
-		</div>		
-		<div class="np">
-			<i id="audio" class="audio material-icons">volume_off</i> 
-			<span id="video"></span>
-			<span id="yt-mobile" class="yt-mobile"></span>
-		</div>
-		<div class="lowerright yt-desktop">
-			<img src="img/developed-with-youtube-sentence-case-light.png">
-		</div>
-		
-		<div class="overlay">
-		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-		
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42684475-3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Monte TV</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="A personal project of John Monte that plays a constant stream of videos randomized with the YouTube iFrame API and laid out in a Netflix-inspired format.">
+	<meta name="image" content="https://madebymonte.com/tv/img/social.jpg">
+	<meta name="author" content="John Monte">
+	<meta name="copyright" content="John Monte">
+	<meta name="robots" content="noindex, nofollow">
+	<meta itemprop="name" content="Monte TV">
+	<meta itemprop="description"
+		content="A personal project of John Monte that plays a constant stream of videos randomized with the YouTube iFrame API and laid out in a Netflix-inspired format.">
+	<meta itemprop="image" content="https://madebymonte.com/tv/img/social.jpg">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Monte TV">
+	<meta name="twitter:description"
+		content="A personal project of John Monte that plays a constant stream of videos randomized with the YouTube iFrame API and laid out in a Netflix-inspired format.">
+	<meta name="twitter:creator" content="@madebymonte">
+	<meta name="twitter:image:src" content="https://madebymonte.com/tv/img/social.jpg">
+	<meta name="og:title" content="Monte TV">
+	<meta name="og:description"
+		content="A personal project of John Monte that plays a constant stream of videos randomized with the YouTube iFrame API and laid out in a Netflix-inspired format.">
+	<meta name="og:image" content="https://madebymonte.com/tv/img/social.jpg">
+	<meta name="og:url" content="https://madebymonte.com/tv">
+	<meta name="og:site_name" content="Monte TV">
+	<meta name="og:type" content="website">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#cb0700">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="theme-color" content="#000000">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+		rel="stylesheet">
+	<script src="js/start.min.js"></script>
+</head>
 
-	  gtag('config', 'UA-42684475-3');
-	</script>
-		
-	</body>
-	
+<body>
+	<div class="rotate-screen">
+		<span class="material-symbols-outlined icon">screen_rotation</span>
+	</div>
+	<div id="preloading" class="preloading">
+		<span class="material-symbols-outlined icon">progress_activity</span>
+	</div>
+	<div id="unmute-btn" class="unmute-btn hide">
+		<span class="material-symbols-rounded">volume_off</span> Tap to unmute
+	</div>
+	<div id="playback-animation" class="playback-animation">
+		<svg class="playback-icons">
+			<use href="#play-icon"></use>
+			<use class="d-none" href="#pause-icon"></use>
+		</svg>
+	</div>
+	<div id="playbackstatus" class="playback-status hide">
+		<svg>
+			<use href="#play-icon"></use>
+		</svg>
+	</div>
+	<div id="resume"></div>
+	<div class="logo upperleft"><a href="/tv"><img src="img/logo-montetv.svg" alt=""></a></div>
+	<div class="main opacity-full">
+		<ul class="menu uppernav">
+			<li><a id="explore">Channels<span id="expand" class="expand material-symbols-rounded">expand_more</span></a>
+			</li>
+		</ul>
+		<div class="upperright yt">
+			<img src="img/logo-youtube.svg" alt="">
+		</div>
+		<div class="upperright close">
+			<a id="close" class="close-btn"><span>Close</span></a>
+		</div>
+		<div id="content" class="content left">
+			<div id="pretext" class="kicker mb-20 d-block d-lg-none"></div>
+			<div id="video"></div>
+			<div class="kicker">
+				<span id="channel" class="channel text-red"></span> &middot; <span id="duration"
+					class="duration"></span> &middot; <span id="attribution" class="attribution"></span>
+			</div>
+		</div>
+		<div id="video-controls" class="video-controls">
+			<div class="bottom-controls">
+				<button id="play" class="button play material-symbols-rounded">pause</button>
+				<div id="videoprogress" class="video-progress">
+					<input class="progress-bar" id="progressbar" value="0" min="0">
+					<input class="seek" id="seek" value="0" min="0" type="range">
+					<div class="current" id="current">00:00</div>
+				</div>
+				<button id="audio" class="button audio material-symbols-rounded">volume_off</button>
+				<button id="fullscreen" class="button fs material-symbols-rounded">fullscreen</button>
+			</div>
+		</div>
+		<div id="reshuffle" class="content right">
+			<a class="reshuffle"><span class="material-symbols-rounded text-red mr-5">shuffle</span> Play something
+				else</a>
+		</div>
+		<div id="carousel" class="carousel hide">
+			<div class="wrapper">
+				<section id="section1">
+					<a onclick="scrollSmoothTo('section2')" class="arrow__btn left-arrow">‹</a>
+					<div class="item">
+						<a href="?c=Documentary&pl=PLBBJAlV7wxvXbIMfCQbZcyjcSjp8iaJx5">
+							<img src="img/th-documentary.jpg" alt="">
+							<span class="heading">Documentary</span>
+							<span class="duration">True-life stories</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="?c=Horror&pl=PLBBJAlV7wxvVcfIKPS0OK3J2aOKsPnpO8">
+							<img src="img/th-horror.jpg" alt="">
+							<span class="heading">Horror</span>
+							<span class="duration">Don't watch alone</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="?c=Animation&pl=PLBBJAlV7wxvWkO5tIxddUfAIGH0B3PYEr">
+							<img src="img/th-kids.jpg" alt="">
+							<span class="heading">Animation</span>
+							<span class="duration">From cartoons to VFX</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="?c=Drama&pl=PLBBJAlV7wxvWTJ1mWVkjrK_c71h0yfbNk">
+							<img src="img/th-drama.jpg" alt="">
+							<span class="heading">Drama</span>
+							<span class="duration">Get sentimental</span>
+						</a>
+					</div>
+					<a onclick="scrollSmoothTo('section2')" class="arrow__btn right-arrow">›</a>
+				</section>
+				<section id="section2">
+					<a onclick="scrollSmoothTo('section1')" class="arrow__btn left-arrow">‹</a>
+					<div class="item">
+						<a href="?c=Documentary&pl=PLBBJAlV7wxvXbIMfCQbZcyjcSjp8iaJx5">
+							<img src="img/th-documentary.jpg" alt="">
+							<span class="heading">Documentary</span>
+							<span class="duration">True-life stories</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="?c=Horror&pl=PLBBJAlV7wxvVcfIKPS0OK3J2aOKsPnpO8">
+							<img src="img/th-horror.jpg" alt="">
+							<span class="heading">Horror</span>
+							<span class="duration">Don't watch alone</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="?c=Animation&pl=PLBBJAlV7wxvWkO5tIxddUfAIGH0B3PYEr">
+							<img src="img/th-kids.jpg" alt="">
+							<span class="heading">Animation</span>
+							<span class="duration">From cartoons to VFX</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="?c=Drama&pl=PLBBJAlV7wxvWTJ1mWVkjrK_c71h0yfbNk">
+							<img src="img/th-drama.jpg" alt="">
+							<span class="heading">Drama</span>
+							<span class="duration">Get sentimental</span>
+						</a>
+					</div>
+					<a onclick="scrollSmoothTo('section1')" class="arrow__btn right-arrow">›</a>
+				</section>
+			</div>
+		</div>
+		<div id="ticker" class="ticker">
+			<div class="far-left">Disclaimer</div>
+			<div class="far-right">Hide</div>
+			<div class="marquee">
+				This personal project is intended for non-commercial educational purposes only and it uses the YouTube
+				iframe API to embed public videos uploaded by other users to YouTube. This personal project is not
+				associated with any of the video content, and it is neither affiliated with nor endorsed by YouTube. No
+				videos were uploaded by the author of this personal project. All other trademarks, logos, and images are
+				the property of their respective and rightful owners.
+			</div>
+		</div>
+	</div>
+	<div class="video-background">
+		<div class="video-foreground">
+			<div id="player"></div>
+		</div>
+	</div>
+	<div class="overlay opacity-full"></div>
+	<svg class="d-none">
+		<defs>
+			<symbol id="pause-icon" viewBox="0 0 24 24">
+				<path d="M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z"></path>
+			</symbol>
+			<symbol id="play-icon" viewBox="0 0 24 24">
+				<path d="M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z"></path>
+			</symbol>
+		</defs>
+	</svg>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"
+		integrity="sha512-JHJv/L48s1Hod24iSI0u9bcF/JlUi+YaxliKdbasnw/U1Lp9xxWkaZ3O5OuQPMkVwOVXeFkF4n4176ouA6Py3A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/end.min.js"></script>
+</body>
+
 </html>
