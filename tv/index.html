@@ -44,15 +44,15 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 		rel="stylesheet">
-	<script src="js/start.min.js"></script>
+		<script src="js/start.min.js"></script>
 </head>
 
 <body>
 	<div class="rotate-screen">
-		<span class="material-symbols-outlined icon">screen_rotation</span>
+		<span class="material-symbols-outlined icon"><img src="img/icon-rotate.svg" alt=""></span>
 	</div>
 	<div id="preloading" class="preloading">
-		<span class="material-symbols-outlined icon">progress_activity</span>
+		<span class="material-symbols-outlined icon"><img src="img/icon-progress.svg" alt=""></span>
 	</div>
 	<div id="unmute-btn" class="unmute-btn hide">
 		<span class="material-symbols-rounded">volume_off</span> Tap to unmute
@@ -113,28 +113,28 @@
 						<a href="?c=Documentary&pl=PLBBJAlV7wxvXbIMfCQbZcyjcSjp8iaJx5">
 							<img src="img/th-documentary.jpg" alt="">
 							<span class="heading">Documentary</span>
-							<span class="duration">True-life stories</span>
+							<span class="subtext">True-life stories</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="?c=Horror&pl=PLBBJAlV7wxvVcfIKPS0OK3J2aOKsPnpO8">
 							<img src="img/th-horror.jpg" alt="">
 							<span class="heading">Horror</span>
-							<span class="duration">Don't watch alone</span>
+							<span class="subtext">Don't watch alone</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="?c=Animation&pl=PLBBJAlV7wxvWkO5tIxddUfAIGH0B3PYEr">
 							<img src="img/th-kids.jpg" alt="">
 							<span class="heading">Animation</span>
-							<span class="duration">From cartoons to VFX</span>
+							<span class="subtext">From cartoons to VFX</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="?c=Drama&pl=PLBBJAlV7wxvWTJ1mWVkjrK_c71h0yfbNk">
 							<img src="img/th-drama.jpg" alt="">
 							<span class="heading">Drama</span>
-							<span class="duration">Get sentimental</span>
+							<span class="subtext">Get sentimental</span>
 						</a>
 					</div>
 					<a onclick="scrollSmoothTo('section2')" class="arrow__btn right-arrow">›</a>
@@ -145,28 +145,28 @@
 						<a href="?c=Documentary&pl=PLBBJAlV7wxvXbIMfCQbZcyjcSjp8iaJx5">
 							<img src="img/th-documentary.jpg" alt="">
 							<span class="heading">Documentary</span>
-							<span class="duration">True-life stories</span>
+							<span class="subtext">True-life stories</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="?c=Horror&pl=PLBBJAlV7wxvVcfIKPS0OK3J2aOKsPnpO8">
 							<img src="img/th-horror.jpg" alt="">
 							<span class="heading">Horror</span>
-							<span class="duration">Don't watch alone</span>
+							<span class="subtext">Don't watch alone</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="?c=Animation&pl=PLBBJAlV7wxvWkO5tIxddUfAIGH0B3PYEr">
 							<img src="img/th-kids.jpg" alt="">
 							<span class="heading">Animation</span>
-							<span class="duration">From cartoons to VFX</span>
+							<span class="subtext">From cartoons to VFX</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="?c=Drama&pl=PLBBJAlV7wxvWTJ1mWVkjrK_c71h0yfbNk">
 							<img src="img/th-drama.jpg" alt="">
 							<span class="heading">Drama</span>
-							<span class="duration">Get sentimental</span>
+							<span class="subtext">Get sentimental</span>
 						</a>
 					</div>
 					<a onclick="scrollSmoothTo('section1')" class="arrow__btn right-arrow">›</a>
@@ -186,7 +186,7 @@
 		</div>
 	</div>
 	<div class="video-background">
-		<div class="video-foreground">
+		<div id="videoforeground" class="video-foreground">
 			<div id="player"></div>
 		</div>
 	</div>
