@@ -6,8 +6,8 @@ const handleButtonClick = e => {
   const targetSection = e.target.getAttribute("data-section");
   const section = document.querySelector(targetSection);
   targetSection !== "#about" ?
-  card.classList.add("is-active") :
-  card.classList.remove("is-active");
+    card.classList.add("is-active") :
+    card.classList.remove("is-active");
   card.setAttribute("data-state", targetSection);
   sections.forEach(s => s.classList.remove("is-active"));
   buttons.forEach(b => b.classList.remove("is-active"));
@@ -19,21 +19,15 @@ buttons.forEach(btn => {
   btn.addEventListener("click", handleButtonClick);
 });
 
-$(document).ready(function() { 
-  $('.popup').show();    
-  $('#close').click(function(){  
-    $('.popup').hide();    
-  });
-/* function checkCookie() {
-  var cookieset = getCookie("_checkCookie");
-  if (cookieset!="") {
-    $('.popup').hide();    
-  }else{
-    $('.popup').hide();    
-    if (cookieset != "" && cookieset != null) {
-      setCookie("_checkCookie", cookieset, 365);
-    }
-  }
-} 
-checkCookie(); */
-});
+/* timer = setInterval(function() {
+  $('.bubble').addClass('fade-in');
+  $('.card').addClass('reposition');
+}, 8000); */
+
+/* $('#close').click(function () {
+  $('.bubble').addClass('fade-out');
+  $('.bubble').removeClass('fade-in');
+  $('.card').removeClass('reposition');
+  clearInterval(timer);
+  timer = 0;
+}); */
