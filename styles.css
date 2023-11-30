@@ -53,27 +53,49 @@ a {
   border-radius: 20px;
   box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
-/*margin-top: -145px;*/
+  /*margin-top: -145px;*/
   -webkit-animation: fadeIn 0.6s both;
   animation: fadeIn 0.6s both;
 }
 
 @-webkit-keyframes fadeIn {
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-0% {
-  opacity: 0;
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-100% {
-  opacity: 1;
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .card.reposition {
@@ -100,11 +122,6 @@ a {
   height: 80px;
 }
 
-.card.is-active .card-cover {
-  height: 100px;
-  top: -50px;
-}
-
 .card.is-active .card-avatar {
   -webkit-transform: none;
   transform: none;
@@ -123,12 +140,13 @@ a {
 
 .card.is-active .card-fullname {
   bottom: 20px;
-  font-size: 19px;
+  font-size: 1.1875em;
 }
 
 .card.is-active .card-jobtitle {
-  bottom: 13px;
+  bottom: 15px;
   letter-spacing: 1px;
+  font-size: 0.6875em;
 }
 
 .card-header {
@@ -145,24 +163,6 @@ a {
 .card-header * {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.card-cover {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  height: 160px;
-  top: -20%;
-  left: 0;
-  will-change: top;
-  background-size: cover;
-  background-position: center;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .card-avatar {
@@ -183,7 +183,7 @@ a {
 .card-fullname {
   position: absolute;
   bottom: 0;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
@@ -195,13 +195,13 @@ a {
 
 .card-jobtitle {
   position: absolute;
-  bottom: -1px;
-  font-size: 12px;
+  bottom: 0;
+  font-size: 0.75em;
   white-space: nowrap;
   font-weight: 500;
   opacity: 0.4;
   text-transform: uppercase;
-  letter-spacing: 1.25px;
+  letter-spacing: 1px;
   margin: 0;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-7px);
@@ -222,7 +222,7 @@ a {
 
 .card-subtitle {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8125em;
   margin-bottom: 8px;
   display: none;
 }
@@ -234,9 +234,8 @@ a {
 .card-desc {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  font-size: 0.875em;
   margin: 0;
-  font-weight: 400;
   font-family: "Inter", sans-serif;
   text-align: center;
 }
@@ -253,7 +252,7 @@ a {
 
 .card-social svg {
   fill: rgba(255, 255, 255, 0.5);
-  width: 16px;
+  width: 24px;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -261,8 +260,8 @@ a {
 
 .card-social a {
   color: rgba(255, 255, 255, 0.5);
-  height: 32px;
-  width: 32px;
+  height: 36px;
+  width: 36px;
   border-radius: 50%;
   display: -webkit-inline-box;
   display: inline-flex;
@@ -307,7 +306,7 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: 0;
+  background: none;
   border: 0;
   padding: 20px 5px;
   cursor: pointer;
@@ -317,14 +316,14 @@ a {
   outline: 0;
   border-bottom: 1px solid transparent;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 0.75em;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .card-buttons button.is-active,
 .card-buttons button:hover {
-  color: #eee;
+  color: #fff;
   position: relative;
 }
 
@@ -340,7 +339,7 @@ a {
   background: linear-gradient(90deg, rgba(77, 161, 169, 0) 0%, rgba(77, 161, 169, 0.75203) 38.288288288288285%, rgb(77, 161, 169) 50.9132179054054%, rgba(77, 161, 169, 0.75248) 63.06306306306306%, rgba(77, 161, 169, 0) 100%);
   background-repeat: no-repeat;
   background-position-y: 100%;
-
+  animation: fadeIn 0.6s forwards;
 }
 
 .card-buttons button.is-active:before {
@@ -398,7 +397,7 @@ a {
   content: "";
   left: 42px;
   width: 1px;
-  top: 0;
+  top: 3px;
   height: 100%;
   position: absolute;
   content: "";
@@ -419,13 +418,13 @@ a {
   content: attr(data-year);
   width: 10px;
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 37px;
   width: 8px;
   height: 8px;
   line-height: 0.6;
   border: 2px solid #171717;
-  font-size: 11px;
+  font-size: 0.6875em;
   text-indent: -35px;
   border-radius: 50%;
   color: rgba(255, 255, 255, 0.4);
@@ -435,13 +434,13 @@ a {
 
 .card-item-title {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   margin-bottom: 5px;
-  color: #eee;
+  color: #fff;
 }
 
 .card-item-desc {
-  font-size: 13px;
+  font-size: 0.8125em;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
   font-family: "Inter", sans-serif;
@@ -456,7 +455,7 @@ a {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 0.8125em;
   color: rgba(255, 255, 255, 0.7);
   font-family: "Inter", sans-serif;
   line-height: 1.6;
@@ -474,7 +473,8 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding-right: 12px;
-  border-right: 1px solid transparent;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  color: #4da1a9;
 }
 
 .contact-btn {
@@ -488,7 +488,7 @@ a {
   max-height: 40px;
   margin-top: 25px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 500;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
@@ -512,7 +512,7 @@ a {
   color: rgba(255, 255, 255, 0.7);
   padding: 20px 50px 30px 25px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.6;
   position: relative;
   margin-bottom: 20px;
@@ -551,7 +551,7 @@ a {
   height: 30px;
   border-radius: 30px;
   display: inline-block;
-  font-size: 13px;
+  font-size: 0.8125em;
   max-width: 165px;
   overflow: hidden;
   white-space: nowrap;
@@ -565,7 +565,7 @@ a {
 
 .bubble-info .date {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: 1.25px;
   opacity: 0.6;
@@ -680,8 +680,8 @@ a {
 
 #close {
   text-decoration: none;
-  font-size: 18px;
-  line-height: 14px;
+  font-size: 1.125em;
+  line-height: 0.875em;
   padding: 15px;
   position: absolute;
   top: 8px;
