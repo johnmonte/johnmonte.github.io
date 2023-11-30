@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Manrope:400|Inter:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:400|Inter:400,500,600|IBM+Plex+Mono:400,500&display=swap");
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -125,9 +127,8 @@ a {
 }
 
 .card.is-active .card-jobtitle {
-  bottom: 16px;
+  bottom: 13px;
   letter-spacing: 1px;
-  font-size: 11px;
 }
 
 .card-header {
@@ -189,17 +190,18 @@ a {
   -webkit-transform: translateY(-10px) translateX(-50%);
   transform: translateY(-10px) translateX(-50%);
   left: 50%;
+  margin: 0.67em 0;
 }
 
 .card-jobtitle {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   font-size: 12px;
   white-space: nowrap;
   font-weight: 500;
   opacity: 0.4;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.25px;
   margin: 0;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-7px);
@@ -306,18 +308,18 @@ a {
   -ms-user-select: none;
   user-select: none;
   background: 0;
-  font-size: 13px;
   border: 0;
   padding: 20px 5px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.4);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
   outline: 0;
   border-bottom: 1px solid transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .card-buttons button.is-active,
@@ -739,6 +741,7 @@ a {
   background-size: 300%, 200%;
   background-position: 50% 50%, 50% 50%;
   filter: blur(10px) invert(100%);
+  -webkit-mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
   mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
   pointer-events: none;
 }
