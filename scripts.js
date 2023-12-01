@@ -5,7 +5,7 @@ const card = document.querySelector(".card");
 const handleButtonClick = e => {
   const targetSection = e.target.getAttribute("data-section");
   const section = document.querySelector(targetSection);
-  targetSection !== "#about" ?
+  targetSection !== "#profile" ?
     card.classList.add("is-active") :
     card.classList.remove("is-active");
   card.setAttribute("data-state", targetSection);
@@ -22,9 +22,9 @@ buttons.forEach(btn => {
 /* timer = setInterval(function() {
   $('.bubble').addClass('fade-in');
   $('.card').addClass('reposition');
-}, 8000); */
+}, 8000);
 
-/* $('#close').click(function () {
+$('#close').click(function () {
   $('.bubble').addClass('fade-out');
   $('.bubble').removeClass('fade-in');
   $('.card').removeClass('reposition');

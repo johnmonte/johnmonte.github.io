@@ -41,16 +41,16 @@
 
   <div class="wrapper dark">
     <div class="container">
-      <div class="card glass" data-state="#about">
+      <div class="card glass" data-state="#profile">
         <div class="card-header">
           <img class="card-avatar" src="unicorn.png" />
           <h1 class="card-fullname">John Monte</h1>
           <h2 class="card-jobtitle">Independent Designer</h2>
         </div>
         <div class="card-main">
-          <div class="card-section is-active" id="about">
+          <div class="card-section is-active" id="profile">
             <div class="card-content">
-              <div class="card-subtitle">About</div>
+              <div class="card-subtitle">Profile</div>
               <p class="card-desc">Designer of brands for products and products for brands. Knows UI, UX,
                 HTML, CSS, JS, and other related acronyms.
               </p>
@@ -72,7 +72,7 @@
           </div>
           <div class="card-section" id="experience">
             <div class="card-content">
-              <div class="card-subtitle">Work Experience</div>
+              <div class="card-subtitle">Experience</div>
               <div class="card-timeline">
                 <div class="card-item" data-year="2023">
                   <div class="card-item-title">Designer at <span>Anywhere</span></div>
@@ -122,13 +122,14 @@
             </div>
           </div>
           <div class="card-buttons">
-            <button data-section="#about" class="is-active">About</button>
+            <button data-section="#profile" class="is-active">Profile</button>
             <button data-section="#experience">Experience</button>
             <button data-section="#contact">Contact</button>
           </div>
         </div>
       </div> <!-- end card -->
     </div><!-- end container -->
+    <canvas id="game"></canvas>
     <div class="godrays">
       <div class="beams"></div>
     </div>
@@ -138,7 +139,7 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
-
+  <script src="snake.js"></script>
 </body>
 
 </html>

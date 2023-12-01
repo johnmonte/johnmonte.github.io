@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -53,9 +55,9 @@ a {
   border-radius: 20px;
   box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
-  /*margin-top: -145px;*/
   -webkit-animation: fadeIn 0.6s both;
   animation: fadeIn 0.6s both;
+  /* margin-top: -87px; */
 }
 
 @-webkit-keyframes fadeIn {
@@ -102,11 +104,11 @@ a {
   margin-top: 0;
 }
 
-.card[data-state="#about"] {
+.card[data-state="#profile"] {
   height: 450px;
 }
 
-.card[data-state="#about"] .card-main {
+.card[data-state="#profile"] .card-main {
   padding-top: 0;
 }
 
@@ -180,6 +182,16 @@ a {
   transform: translateX(-50%) translateY(-64px);
 }
 
+.card-avatar:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
+
 .card-fullname {
   position: absolute;
   bottom: 0;
@@ -235,7 +247,7 @@ a {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.875em;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Inter", sans-serif;
   text-align: center;
 }
@@ -406,12 +418,12 @@ a {
 .card-item {
   position: relative;
   padding-left: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   z-index: 1;
 }
 
 .card-item:last-child {
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .card-item:after {
@@ -442,7 +454,7 @@ a {
 .card-item-desc {
   font-size: 0.8125em;
   color: rgba(255, 255, 255, 0.7);
-  line-height: 1.5;
+  line-height: 1.6;
   font-family: "Inter", sans-serif;
 }
 
@@ -507,11 +519,10 @@ a {
 
 .bubble {
   max-width: 340px;
-  min-height: 40px;
-  background: #000;
+  min-height: 67px;
   color: rgba(255, 255, 255, 0.7);
-  padding: 20px 50px 30px 25px;
-  border-radius: 20px;
+  padding: 20px;
+  border-radius: 20px 20px 20px 0;
   font-size: 0.875em;
   line-height: 1.6;
   position: relative;
@@ -520,20 +531,14 @@ a {
   transition: 0.3s;
   position: relative;
   transition: 0.3s;
+  box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.4);
+  transform: scale(0);
   opacity: 0;
 }
 
-.bubble:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 14px 14px 0;
-  border-color: #000 transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  bottom: -14px;
-  left: 30px;
+.bubble .text {
+  max-width: 260px;
+  display: flex;
 }
 
 .bubble-info {
@@ -547,7 +552,7 @@ a {
 .bubble-info .link {
   padding: 5px 15px;
   color: #4da1a9;
-  background: #101010;
+  background: #000;
   height: 30px;
   border-radius: 30px;
   display: inline-block;
@@ -620,11 +625,11 @@ a {
   -webkit-animation: scaleIn 0.4s ease-in-out forwards;
   -moz-animation: scaleIn 0.4s ease-in-out forwards;
   animation: scaleIn 0.4s ease-in-out forwards;
-  -webkit-transform-origin: bottom center;
-  -moz-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
-  -o-transform-origin: bottom center;
-  transform-origin: bottom center;
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
   opacity: 1;
 }
 
@@ -670,11 +675,11 @@ a {
   -webkit-animation: scaleOut 0.4s ease-in-out forwards;
   -moz-animation: scaleOut 0.4s ease-in-out forwards;
   animation: scaleOut 0.4s ease-in-out forwards;
-  -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
-  transform-origin: top center;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
   opacity: 0;
 }
 
@@ -684,7 +689,7 @@ a {
   line-height: 0.875em;
   padding: 15px;
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: 5px;
   color: #fff;
   opacity: 0.6;
