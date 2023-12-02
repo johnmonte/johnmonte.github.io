@@ -56,12 +56,14 @@ var Snake = function () {
     for (var i = 0; i < this.len; i++) {
       this.parts[i].add(this.movement[i]);
       if (!this.parts[i].bounds(0, 0, canvas.width, canvas.height)) {
-        return false;
+        this.parts[i].x = (this.parts[i].x + canvas.width) % canvas.width;
+        this.parts[i].y = (this.parts[i].y + canvas.height) % canvas.height;
       }
+    }
 
-      for (var j = 0; j < i; j++) {
-        if (this.parts[j].bounds(this.parts[i].x - this.speed + 1, this.parts[i].y - this.speed + 1, 2 * this.speed - 2, 2 * this.speed - 2))
-          return false;
+    for (var i = 1; i < this.len; i++) {
+      if (this.parts[0].bounds(this.parts[i].x - this.speed + 1, this.parts[i].y - this.speed + 1, 2 * this.speed - 2, 2 * this.speed - 2)) {
+        return false;
       }
     }
 
@@ -94,19 +96,27 @@ var Snake = function () {
   };
 
   this.moveLeft = function () {
-    this.dir = new Position(-this.speed, 0);
+    if (this.movement[0].x !== this.speed) {
+      this.dir = new Position(-this.speed, 0);
+    }
   };
 
   this.moveDown = function () {
-    this.dir = new Position(0, this.speed);
+    if (this.movement[0].y !== -this.speed) {
+      this.dir = new Position(0, this.speed);
+    }
   };
 
   this.moveUp = function () {
-    this.dir = new Position(0, -this.speed);
+    if (this.movement[0].y !== this.speed) {
+      this.dir = new Position(0, -this.speed);
+    }
   };
 
   this.moveRight = function () {
-    this.dir = new Position(this.speed, 0);
+    if (this.movement[0].x !== -this.speed) {
+      this.dir = new Position(this.speed, 0);
+    }
   };
 };
 
@@ -123,8 +133,16 @@ var drawScore = function () {
   context.fillText("SCORE : " + score, 20, 30);
 };
 
+var quitFlag = false;
+
 var draw = function () {
   clear();
+
+  if (quitFlag) {
+    console.log("Game quit");
+    reset();
+    return;
+  }
 
   if (Math.random() > 0.99 || foods.length == 0) {
     foods.push(new Food(random()))
@@ -132,9 +150,7 @@ var draw = function () {
 
   if (!spawn.update()) {
     console.log("Game over");
-    spawn = new Snake();
-    foods = [];
-    score = 0;
+    reset();
   }
   spawn.draw();
 
@@ -147,6 +163,23 @@ var draw = function () {
   requestAnimationFrame(draw);
 };
 
+function reset() {
+  spawn = new Snake();
+  foods = [];
+  score = 0;
+}
+
+function startGame() {
+  quitFlag = false;
+  canvas.style.display = "block";
+  draw();
+}
+
+function quitGame() {
+  quitFlag = true;
+  canvas.style.display = "none";
+}
+
 window.addEventListener("keydown", function (e) {
   switch (e.keyCode) {
     case 37: spawn.moveLeft();
@@ -157,11 +190,9 @@ window.addEventListener("keydown", function (e) {
       break;
     case 40: spawn.moveDown();
       break;
-    case 32: draw();
+    case 13: startGame();
       break;
-    case 27: location.reload();
+    case 27: quitGame();
       break;
   }
 });
-
-clear();
