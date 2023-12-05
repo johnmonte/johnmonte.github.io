@@ -9,6 +9,8 @@
     content="Designer of brands and digital products. Based in the Philippines. Available worldwide.">
   <meta name="google-site-verification" content="igdz_D1tNh9YsWTDdiY5Sbikw5Seko8ssdD7Ap90bao" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="John Monte">
+	<meta name="copyright" content="John Monte">
   <!-- Begin OpenGraph -->
   <meta property="og:title" content="John Monte — Independent Designer">
   <meta property="og:site_name" content="John Monte — Independent Designer">
@@ -39,11 +41,11 @@
 
 <body>
 
-  <div class="wrapper dark">
+  <div id="theme" class="theme">
     <div class="container">
       <div class="card glass" data-state="#profile">
         <div class="card-header">
-          <img class="card-avatar" src="unicorn.png" />
+          <img class="card-avatar" src="unicorn.jpg" alt="" loading="lazy"/>
           <h1 class="card-fullname">John Monte</h1>
           <h2 class="card-jobtitle">Independent Designer</h2>
         </div>
@@ -75,7 +77,7 @@
               <div class="card-subtitle">Experience</div>
               <div class="card-timeline">
                 <div class="card-item" data-year="2023">
-                  <div class="card-item-title">Designer at <span>Anywhere</span></div>
+                  <div class="card-item-title">Designer at <span>Freelance</span></div>
                   <div class="card-item-desc">Collaborated with startups and agencies from around the world…</div>
                 </div>
                 <div class="card-item" data-year="2012">
@@ -117,7 +119,7 @@
                   </svg>
                   <a href="mailto:john@madebymonte.com">john@madebymonte.com</a>
                 </div>
-                <a href="vcard.vcf"><button class="contact-btn">Download vCard</button></a>
+                <a href="vcard.vcf" class="contact-btn">Download vCard</a>
               </div>
             </div>
           </div>
@@ -130,13 +132,19 @@
       </div> <!-- end card -->
     </div><!-- end container -->
     <canvas id="game"></canvas>
-    <div class="godrays">
-      <div class="beams"></div>
+    <div class="aurora">
+      <div class="lights"></div>
     </div>
-  </div><!-- end wrapper -->
+    <div class="theme-switch">
+      <label class="toggle">
+        <input id="toggle" class="toggle-switch" type="checkbox">
+        <span class="toggle-slider slider-round"></span>
+      </label>
+    </div>
+  </div><!-- end theme -->
 
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
   <script src="snake.js"></script>

@@ -19,15 +19,13 @@ buttons.forEach(btn => {
   btn.addEventListener("click", handleButtonClick);
 });
 
-/* timer = setInterval(function() {
-  $('.bubble').addClass('fade-in');
-  $('.card').addClass('reposition');
-}, 8000);
-
-$('#close').click(function () {
-  $('.bubble').addClass('fade-out');
-  $('.bubble').removeClass('fade-in');
-  $('.card').removeClass('reposition');
-  clearInterval(timer);
-  timer = 0;
-}); */
+const toggle = document.getElementsByClassName('toggle-switch')[0];
+toggle.checked = false;
+toggle.addEventListener("click", () => {
+  if (toggle.checked === true) {
+    theme.classList.add("dark");
+  } else {
+    theme.classList.remove("dark");
+    toggle.checked = false;
+  }
+});

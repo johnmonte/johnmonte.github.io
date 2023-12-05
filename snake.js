@@ -1,12 +1,17 @@
 var canvas = document.getElementById("game");
 var context = canvas.getContext("2d");
+var theme = document.getElementById("theme");
 var score = 0;
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var clear = function () {
-  context.fillStyle = "#000";
+  if (theme.classList.contains("dark")) {
+    context.fillStyle = "#000";
+  } else {
+    context.fillStyle = "#fff";
+  }
   context.fillRect(0, 0, canvas.width, canvas.height);
 };
 
@@ -127,10 +132,9 @@ var random = function () {
 };
 
 var drawScore = function () {
-  context.fillStyle = "rgba(255, 255, 255, 0.7)";
   context.font = "500 13px Manrope";
   context.letterSpacing = "1px";
-  context.fillText("SCORE : " + score, 20, 30);
+  context.fillText("" + score, 20, 30);
 };
 
 var quitFlag = false;
