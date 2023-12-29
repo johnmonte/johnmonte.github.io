@@ -20,7 +20,7 @@ buttons.forEach(btn => {
 });
 
 const toggle = document.getElementsByClassName('toggle-switch')[0];
-toggle.checked = true;
+toggle.checked = false;
 toggle.addEventListener("click", () => {
   if (toggle.checked === true) {
     theme.classList.add("dark");
