@@ -31,6 +31,10 @@ h2,
   background-color: #eae9ec;
 }
 
+.main-nav__link--featured {
+  color: #D90429;
+}
+
 .card__collection .media,
 .cc-gallery .media,
 .cc-nav-slideshow .quick-nav {
@@ -125,6 +129,6 @@ h2,
   font-size: .88em;
 }
 
-.shopify-section-group-footer-group .icons-with-text.color-scheme--2 {
+.shopify-section-group-footer-group .color-scheme--2 {
   background-color: #565454;
 }
