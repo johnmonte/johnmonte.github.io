@@ -55,7 +55,7 @@ h2,
   font-size: 14px;
 }
 
-.branch {
+.locations {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
