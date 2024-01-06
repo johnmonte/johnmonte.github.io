@@ -129,7 +129,20 @@ h2,
   font-size: .88em;
 }
 
-.shopify-section-group-footer-group .color-scheme,
-.shopify-section-group-footer-group .color-scheme--2 {
-  background-color: #565454;
+.footer-icons .payment-icons,
+.footer-icons .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+	margin-bottom: -10px;
+	margin-inline-end: -10px;
+}
+
+.footer-icons .payment-icons > li:not(:last-child),
+.footer-icons .social-icons > li:not(:last-child) {
+  margin-inline-end: 10px;
+}
+
+.footer-icons .payment-icons > li,
+.footer-icons .social-icons > li {
+	margin-bottom: 10px;
 }
