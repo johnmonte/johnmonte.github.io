@@ -55,12 +55,12 @@ h2,
   font-size: 14px;
 }
 
-.locations {
+.locations,
+.footnote {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 3em;
 }
 
 .branch {
@@ -113,10 +113,11 @@ h2,
   color: #6D9B1B;
 }
 
-.footer__social--right .social-icons {
-  justify-content: flex-end;
+.footnote {
+  color: #9C9CA5;
+  font-size: .88em;
 }
 
-footer {
-  padding-top: 2em;
+.footer__social--right .social-icons {
+  justify-content: flex-end;
 }
