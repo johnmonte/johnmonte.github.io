@@ -113,6 +113,10 @@ h2,
   color: #6D9B1B;
 }
 
-.footer {
+.footer__social--right .social-icons {
+  justify-content: flex-end;
+}
+
+footer {
   padding-top: 2em;
 }
