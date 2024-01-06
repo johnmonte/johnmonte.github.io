@@ -61,6 +61,11 @@ h2,
   font-size: 14px;
 }
 
+.product-message {
+  background-color: #E4EED2;
+  color: #6D9B1B;
+}
+
 .locations,
 .footer-icons,
 .footnote {
