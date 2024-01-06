@@ -38,9 +38,11 @@ h2,
 }
 
 .announcement__text a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
+
+/* to do: remove important */
 
 .main-nav__item--primary:hover,
 .main-nav__item--primary.is-active,
@@ -123,6 +125,6 @@ h2,
   font-size: .88em;
 }
 
-.shopify-section-group-footer-group .icons-with-text {
+.shopify-section-group-footer-group .icons-with-text.color-scheme--2 {
   background-color: #565454;
 }
