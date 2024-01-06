@@ -1,0 +1,93 @@
+:root {
+  --heading-font-family: "Plus Jakarta Sans", sans-serif;
+  --heading-font-weight: 800;
+  --navigation-font-family: "Plus Jakarta Sans", sans-serif;
+  --navigation-font-weight: 500;
+  --body-font-family: "Plus Jakarta Sans", sans-serif;
+  --body-font-weight: 500;
+}
+
+h1,
+.h1 {
+  letter-spacing: -1px;
+}
+
+h1.product-title,
+h2.disclosure__title {
+  letter-spacing: 0;
+}
+
+h2,
+.h2 {
+  letter-spacing: -0.5px;
+}
+
+.search__input {
+  border-radius: 8px;
+}
+
+.search__input,
+.search__product-types .custom-select__btn {
+  background-color: #eae9ec;
+}
+
+.card__collection .media,
+.cc-gallery .media,
+.cc-nav-slideshow .quick-nav {
+  border-radius: 16px;
+}
+
+.announcement__text a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-nav__item--primary:hover,
+.main-nav__item--primary.is-active,
+.is-open>summary>.main-nav__item--primary,
+.secondary-nav__item:hover,
+.secondary-nav__item.is-active,
+.is-open>summary>.secondary-nav__item {
+  box-shadow: none;
+}
+
+.secondary-nav__cta .icon+span {
+  font-size: 14px;
+}
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location {
+  position: relative;
+}
+
+.location h2 {
+  font-size: 1em;
+  letter-spacing: 0;
+  margin-bottom: 1.5em;
+}
+
+.location ul {
+  list-style-type: none;
+}
+
+.location ul li {
+  margin-bottom: 0.75em;
+  padding-left: 30px;
+  position: relative;
+}
+
+.location ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
