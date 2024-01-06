@@ -56,6 +56,7 @@ h2,
 }
 
 .locations,
+.footer-icons,
 .footnote {
   display: flex;
   flex-wrap: wrap;
@@ -116,8 +117,4 @@ h2,
 .footnote {
   color: #9C9CA5;
   font-size: .88em;
-}
-
-.footer__social--right .social-icons {
-  justify-content: flex-end;
 }
