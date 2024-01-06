@@ -55,7 +55,7 @@ h2,
   font-size: 14px;
 }
 
-.branchs {
+.branch {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
