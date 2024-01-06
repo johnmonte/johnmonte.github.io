@@ -57,13 +57,17 @@ h2,
   box-shadow: none;
 }
 
+.secondary-nav__item.secondary-nav__cta--button {
+  border-radius: 4px;
+}
+
 .secondary-nav__cta .icon+span {
   font-size: 14px;
 }
 
 .product-message {
   background-color: #E4EED2;
-  color: #6D9B1B;
+  color: #0d0a0b;
 }
 
 .locations,
