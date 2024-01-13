@@ -989,8 +989,15 @@ img::-moz-selection {
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1081px) {
   .theme {
     padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .card {
+    max-width: 320px;
+    min-width: 320px;
   }
 }
