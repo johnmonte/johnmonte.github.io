@@ -1,38 +1,73 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Loading...</title>
-  <style>
-    body {
-      background: black;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100dvh;
-      overflow: hidden;
-    }
-    .loader {
-        border: 4px solid gray;
-        border-top: 4px solid black;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    @-webkit-keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-  </style>
-</head>
-<body>
-    <div class="loader"></div>
+<html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Enter password to continue</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="stylesheet" href="login.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+	</head>
+<body oncontextmenu="return false;">
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">
+					<input id="password" type="password" placeholder="password" />
+					<button id="loginbutton" type="button"><i class="la la-angle-right"></i></button>
+					<p id="wrongPassword" style="display: none">access denied</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+	<script type="text/javascript">
+		"use strict";
+
+		function loadPage(pwd) {
+
+			var hash= pwd;
+			hash= Sha1.hash(pwd);
+			var url= hash + "/index.html";
+
+			$.ajax({
+				url : url,
+				dataType : "html",
+				success : function(data) {
+
+					window.location= url;
+
+				},
+				error : function(xhr, ajaxOptions, thrownError) {
+
+
+					parent.location.hash= hash;
+
+					//$("#wrongPassword").show();
+					$("#password").attr("placeholder","access denied");
+					$("#password").val("");
+				}
+			});
+		}
+
+		$("#loginbutton").on("click", function() {
+			loadPage($("#password").val());
+		});
+		$("#password").keypress(function(e) {
+			if (e.which == 13) {
+
+				loadPage($("#password").val());
+			}
+		});
+		$("#password").focus();
+	</script>
 </body>
 </html>
