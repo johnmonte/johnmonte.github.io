@@ -111,7 +111,7 @@ input:hover {
 	width: 50px;
 	height: 50px;
 	padding: 0;
-	margin: 0 0px 0px -6px;
+	margin: 0 0px 0px 4px;
 	font-family: "JetBrains Mono", monospace;
 	font-optical-sizing: auto;
 	font-variant-ligatures:none;
@@ -135,6 +135,10 @@ input:hover {
 .box {
 	margin: auto;
 	/*width: 290px;*/
+}
+
+.field {
+	display: inline-flex;
 }
 
 .lightbox {
