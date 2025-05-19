@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f5f5;
+    padding: 0 15px;
+}
+
+.redirect {
+    position: relative;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 39px 19px 14px;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #ddd;
+    z-index: 2;
+}
+
+.redirect p {
+    margin: 0 0 15px 0;
+}
+
+.redirect:after {
+    content: "Redirect";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    color: #999;
+    border-radius: 4px 0 4px 0;
+}
+
+.redirect .input[type="text"],
+.redirect .btn {
+    padding: 10px 12px;
+    max-height: 40px;
+}
+
+.redirect .input:focus,
+.redirect .btn:focus {
+    box-shadow: none;
+}
