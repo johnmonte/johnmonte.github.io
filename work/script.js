@@ -11,7 +11,7 @@ function countdown() {
     setTimeout(countdown, 500);
 }
 
-//countdown();
+countdown();
 
 var clipboardUrl = new Clipboard('[data-clipboard-url]');
 
