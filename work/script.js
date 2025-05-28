@@ -8,7 +8,7 @@ function countdown() {
         return;
     }
     seconds--;
-    setTimeout(countdown, 500);
+    setTimeout(countdown, 0);
 }
 
 countdown();
