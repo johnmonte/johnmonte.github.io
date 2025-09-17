@@ -285,8 +285,11 @@ ul.lowernav {
 .logo {
     z-index: 4;
     margin: 0;
-    height: 24px;
+    height: auto;
     overflow: hidden;
+    top: 50px;
+    right: 50px;
+    position: absolute;
     /* mix-blend-mode: difference */
 }
 
@@ -298,7 +301,7 @@ ul.lowernav {
 }
 
 .logo img {
-    height: 26px;
+    height: 100px;
     padding: 1px 0
 }
 
