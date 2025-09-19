@@ -10,6 +10,7 @@ body.network,
 .network .logo {
     height: auto;
     top: 40px;
+    text-indent: 0 !important;
 }
 
 .network .logo img {
