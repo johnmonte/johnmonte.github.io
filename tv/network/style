@@ -1,17 +1,43 @@
-:root {
-	--torch-red: #FF5532 !important; 
-}
-
-body,
-.carousel .wrapper section .arrow__btn {
+body.network,
+.network.carousel .wrapper section .arrow__btn {
     font-family: 'Inter', sans-serif;
 }
 
-.logo {
+.network .logo {
     height: auto;
     top: 40px;
 }
 
-ul.uppernav {
+.network ul.uppernav {
     left: 30px;
+}
+
+:root {
+	--brand-red: #FF5532;
+}
+
+.network ul.menu li a.active {
+	color: var(--brand-red);
+}
+
+.network #progressbar {
+	background-color: var(--brand-red);
+	color: var(--brand-red);
+}
+
+.network input[type=range]::-webkit-slider-thumb {
+    background: var(--brand-red);
+}
+
+.network input[type=range]::-moz-range-thumb {
+	border: 1px solid var(--brand-red);
+	background: var(--brand-red);
+}
+
+.network .button.audio {
+	color: var(--brand-red);
+}
+
+.network .far-left {
+	background: var(--brand-red);
 }
