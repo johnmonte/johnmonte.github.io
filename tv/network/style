@@ -1,0 +1,17 @@
+:root {
+	--torch-red: #FF5532 !important; 
+}
+
+body,
+.carousel .wrapper section .arrow__btn {
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    height: auto;
+    top: 40px;
+}
+
+ul.uppernav {
+    left: 30px;
+}
