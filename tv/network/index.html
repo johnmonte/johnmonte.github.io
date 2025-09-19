@@ -189,11 +189,15 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/end.min.js"></script>
 	<script>
-		let url = window.location.href;    
-		if (url.indexOf('?') > -1){
-		url += '?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT'
+		function addUrlParameter(url, param, value) {
+			if (url.includes('?')) {
+				return url + '&' + param + '=' + value;
+			} else {
+				return url + '?' + param + '=' + value;
+			}
 		}
-		window.location.href = url;
+
+		let newUrl = addUrlParameter(url, "pl", "PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT");
 	</script>
 </body>
 
