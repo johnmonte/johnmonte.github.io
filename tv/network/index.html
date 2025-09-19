@@ -189,6 +189,9 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/end.min.js"></script>
 	<script>
+		if (window.location.protocol !== "https:") {
+			window.location.href = window.location.href.replace("http:", "https:");
+		}
 		const urlParams = new URLSearchParams(window.location.search);
 		var playlistId = urlParams.has('pl') ? urlParams.get('pl') : 'PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT';
 	</script>
