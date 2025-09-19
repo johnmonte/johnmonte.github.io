@@ -7,14 +7,28 @@ body.network,
     font-family: 'Inter', sans-serif;
 }
 
-.network .logo {
-    height: auto;
-    top: 40px;
-    text-indent: 0 !important;
+.network .nwlogo {
+	z-index: 4;
+	margin: 0;
+height: auto;
+	opacity: 1;
+	transition: .5s ease;
+	overflow: hidden;
+top: 40px;
 }
 
-.network .logo img {
-    height: 100px;
+.network .nwlogo span {
+	position: absolute;
+	top: -10px;
+	margin-left: 4px;
+	font-size: 8px;
+	text-transform: uppercase;
+}
+
+.network .nwlogo img {
+	height: 100px;
+	padding: 1px 0;
+	/* using padding reduce image height to changing the value of height property */
 }
 
 .network ul.uppernav {
