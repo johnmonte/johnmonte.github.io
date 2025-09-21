@@ -4,7 +4,7 @@ const countdownDisplay = document.getElementById('countdown');
 function countdown() {
     countdownDisplay.textContent = seconds;
     if (seconds <= 0) {
-        window.location.href = 'https://www.figma.com/deck/A05p0QeIhsrnCsMJH1egyS/Portfolio---John-Monte-2503';
+        window.location.href = 'https://madebymonte.com/tv/network?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT';
         return;
     }
     seconds--;
