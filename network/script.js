@@ -4,7 +4,7 @@ const countdownDisplay = document.getElementById('countdown');
 function countdown() {
     countdownDisplay.textContent = seconds;
     if (seconds <= 0) {
-        window.location.href = 'https://madebymonte.com/tv/network?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT';
+        window.location.href = 'https://johnmonte.github.io/sumagang.github.io/tv/network?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT';
         return;
     }
     seconds--;
